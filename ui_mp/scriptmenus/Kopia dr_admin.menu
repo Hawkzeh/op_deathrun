@@ -1,0 +1,68 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			120
+
+#define CHOICE_GROUP			"cmds"
+#define CHOICE_SEP_1			5
+#define CHOICE_SEP_2			6
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+{
+	menuDef
+	{
+		name			"dr_admin"
+		fullscreen		1
+		rect			0 0 640 480	
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		//blurWorld		4.0
+		border			0
+		legacySplitScreenScale
+		
+		onOpen			{ exec "set dr_admin_page 0"; }
+		onEsc			{ close self; }
+		onClose			{}
+
+		// dr_admin_sp - selected player - "BraXi (Jumper,Playing,100HP,0 Warns)"
+
+		CHOICE_BUTTON_VIS( 1, "Next Player >>", scriptMenuResponse "admin_next";, 1 )		
+		CHOICE_BUTTON_VIS( 2, "Previous Player <<", scriptMenuResponse "admin_prev";, 1 )
+
+		CHOICE_SEPARATOR_VIS( 2, 1 )
+
+		CHOICE_BUTTON_VIS( 3, ("Kill -^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_kill";, when(dvarString("dr_admin_page")=="0")  )
+		CHOICE_BUTTON_VIS( 4, ("WTF - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_wtf";, when(dvarString("dr_admin_page")=="0") )
+		CHOICE_BUTTON_VIS( 5, ("Spawn - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_spawn";, when(dvarString("dr_admin_page")=="0") )
+
+		CHOICE_SEPARATOR_VIS( CHOICE_SEP_1, when(dvarString("dr_admin_page")=="0") )
+
+
+		CHOICE_BUTTON_VIS( 3, ("Warn -^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_warn";, when(dvarString("dr_admin_page")=="1")  )
+		CHOICE_BUTTON_VIS( 4, ("Kick -^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_kick";, when(dvarString("dr_admin_page")=="1")  )
+		CHOICE_BUTTON_VIS( 5, ("Ban -^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_ban";, when(dvarString("dr_admin_page")=="1")  )
+		CHOICE_BUTTON_VIS( 6, ("Remove warnings -^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_removewarn";, when(dvarString("dr_admin_page")=="1")  )
+
+		CHOICE_SEPARATOR_VIS( CHOICE_SEP_2, when(dvarString("dr_admin_page")=="1") )
+
+
+		CHOICE_BUTTON_VIS( 3, ("Heal - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_heal";, when(dvarString("dr_admin_page")=="2") )
+		CHOICE_BUTTON_VIS( 4, ("Bounce - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_bounce";, when(dvarString("dr_admin_page")=="2") )
+		CHOICE_BUTTON_VIS( 5, ("Drop current weapon - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_drop";, when(dvarString("dr_admin_page")=="2") )
+		CHOICE_BUTTON_VIS( 6, ("Take all weapons - ^3" + dvarString("dr_admin_sp")), scriptMenuResponse "admin_takeall";, when(dvarString("dr_admin_page")=="2") )
+
+		CHOICE_SEPARATOR_VIS( CHOICE_SEP_2, when(dvarString("dr_admin_page")=="2") )
+
+
+		CHOICE_BUTTON_VIS( 7, "Page 1", exec "set dr_admin_page 0";, 1 )
+		CHOICE_BUTTON_VIS( 8, "Page 2", exec "set dr_admin_page 1";, 1 )
+		CHOICE_BUTTON_VIS( 9, "Page 3", exec "set dr_admin_page 2";, 1 )	
+		
+		CHOICE_FOOTNOTE_VIS( "Logged in as: ^3" + dvarString("dr_admin_name"), 40, 280, 1 )
+		CHOICE_FOOTNOTE_VIS( "Permissions: ^3" + dvarString("dr_admin_perm"), 40, 300, 1 )
+	}
+}
+

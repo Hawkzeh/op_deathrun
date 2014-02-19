@@ -1,0 +1,314 @@
+//#include "ui/menudef.h"
+//#include "ui_mp/common_macro.inc"
+
+/*
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			34
+
+#define CHOICE_SEP_OFFSET_Y		-2
+*/
+//#define CHOICE_GROUP			"items"
+
+
+//#include "ui_mp/menustyle.inc"
+//#include "ui/choices_setup_common.menu"
+#include "ui/levels.menu"
+//#include "ui/choices_setup_levels.menu"
+
+// generic text draw
+#define TEXT_DRAW_ALIGNED_EXP( prect, porigin, ptext, psize, palignx, paligny, palign, pcolor, visArg ) \
+itemDef { \
+	rect			prect \
+	origin 			porigin \
+	textalignx		palignx textaligny paligny \
+	textstyle		ITEM_TEXTSTYLE_SHADOWED \
+	textalign		palign \
+	textscale		psize \
+	forecolor		pcolor \
+	exp				text( ptext ); \
+	visible			visArg decoration autowrapped }
+
+#define LOCAL_ITEM_FRAME \
+	UI_EDGE_REVERSE( GAMEINFO_ORIGIN,HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0, 0, 0.1 0.1 0.1 1 ) \
+	UI_EDGE_REVERSE( GAMEINFO_ORIGIN,HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0, 0, 0.9 0.95 1 0.4 )\
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 5 0, "white", 0.1 0.1 0.1 1, 0, 0, 0 0 0 0 )\
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN (-(GAMEINFO_WIDTH)) 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 5 0, "gradient_fadein", 0.9 0.95 1 0.4, 0, 0, 0 0 0 0 )\	
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN -80 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, (GAMEINFO_WIDTH-76) 0, "ui_perforation", 1 1 1 1, 0, 0, 0 0 0 0 )\
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 20, "gradient_top", 0 0 0 .75, 0, 0, 0 0 0 0 )\
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 (GAMEINFO_HEIGHT-22), "gradient_bottom", 0 0 0 .75, 0, 0, 0 0 0 0 )
+
+#define LOCAL_ITEM_FRAME_BG \
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 92 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 (GAMEINFO_HEIGHT-6), "white", 0 0 0 0.4, 0, 0, 0 0 0 0 )\
+
+// macros for the item display info
+#define LOCAL_ITEM_SHOW( p_mapname, p_mapname2, offset ) \
+	hide "map_image_group"; \
+	hide "map_name_group"; \
+	hide "map_desc_group"; \
+	show "image_"p_mapname; \
+	show "name_"p_mapname; \
+	show "desc_"p_mapname;
+
+#define LOCAL_CHARACTER_SELECTION( itemNum, p_itemname_text, p_itemname, pdesc, action, offset, visArg )\
+	CHOICE_BUTTON_FOCUS_VIS( itemNum, p_itemname_text, action, LOCAL_ITEM_SHOW( p_itemname, p_itemname_text, offset ), ;, visArg) \
+	TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), pdesc, TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, visArg )\
+	PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "character_"p_itemname, 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", visArg )
+	//CHOICE_DBUTTON_VIS( itemNum, p_itemname_text, when( ARCADE_CONDITION(p_itemname) ); ) \
+/*
+#define LOCAL_SPRAY_SELECTION( itemNum, p_itemname_text, p_itemname, pdesc, action, offset, visArg )\
+	CHOICE_BUTTON_FOCUS_VIS( itemNum, p_itemname_text, action, LOCAL_ITEM_SHOW( p_itemname, p_itemname_text, offset ), ;, visArg) \
+	TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), pdesc, TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, visArg )\
+	PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "spray"p_itemname"_menu", 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", visArg )
+*/
+//LOCAL_SPRAY_SELECTION( 2, "Devil is angry", "1"		,"Devil is angry.", scriptMenuResponse "spray1"; close "sprays";, 1, when( rank >= 1) )
+#define rank stat(2350)
+#define SPRAY_TABLE "mp/sprayTable.csv"
+
+//first three lines for unlocked, another 3 lines for locked
+#define LOCAL_SPRAY_UNLOCKED( itemNum, p_itemname, id, offset, page )\
+	CHOICE_BUTTON_FOCUS_VIS( itemNum, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), scriptMenuResponse "spray"id; close "sprays";, LOCAL_ITEM_SHOW( p_itemname, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), offset ), ;, when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), dvarString(tableLookup(SPRAY_TABLE, 0, id, 6)), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+
+#define LOCAL_SPRAY_LOCKED( itemNum, p_itemname, id, offset, page )\
+	CHOICE_BUTTON_FOCUS_VIS( itemNum, ("^0"+dvarString(tableLookup(SPRAY_TABLE, 0, id, 5))), ;, LOCAL_ITEM_SHOW( p_itemname, ("^0"+dvarString(tableLookup(SPRAY_TABLE, 0, id, 5))), offset ), ;, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), ( "Unlocked at level ^3"+tableLookup(SPRAY_TABLE, 0, id, 2)+"^7." ), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+	//PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "specialty_locked", 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+	
+	//PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+
+//#define LOCAL_SPRAY_UNLOCKED( itemNum, p_itemname, id, offset, page )\
+//	CHOICE_BUTTON_FOCUS_VIS( itemNum, "L O C K E D", ;, LOCAL_ITEM_SHOW( p_itemname, "L O C K E D", offset ), ;, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+//	TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), dvarString(tableLookup(SPRAY_TABLE, 0, id, 6)), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+//	PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+
+
+#define LOCAL_SPRAY_SELECTION( itemNum, p_itemname, id, offset, page )\
+	LOCAL_SPRAY_LOCKED( itemNum, p_itemname, id, offset, page )\
+	//LOCAL_SPRAY_UNLOCKED( itemNum, (p_itemname+"_LSU"), id, (offset+"_LSU"), page )
+	//LOCAL_SPRAY_LOCKED( itemNum, p_itemname, id, offset, page )//\
+	//LOCAL_SPRAY_UNLOCKED( itemNum, p_itemname, id, offset, page )
+	//LOCAL_SPRAY_UNLOCKED( itemNum, p_itemname, id, offset, page )
+
+	//CHOICE_BUTTON_FOCUS_VIS( itemNum, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), scriptMenuResponse "spray"id; close "sprays";, LOCAL_ITEM_SHOW( p_itemname, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), offset ), ;, when(rank > tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) \
+	//TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), dvarString(tableLookup(SPRAY_TABLE, 0, id, 6)), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	//PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+
+//#define LOCAL_SPRAY_SELECTION( itemNum, p_itemname, id, offset, page )\
+//	LOCAL_SPRAY_UNLOCKED( itemNum, p_itemname, id, offset, page )\
+//	LOCAL_SPRAY_LOCKED( itemNum, p_itemname, id, offset, page )
+	
+	//CHOICE_BUTTON_FOCUS_VIS( itemNum, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), scriptMenuResponse "spray"id; close "sprays";, LOCAL_ITEM_SHOW( p_itemname, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), offset ), ;, when(rank > tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) \
+	//TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), dvarString(tableLookup(SPRAY_TABLE, 0, id, 6)), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) \
+	//PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, tableLookup(SPRAY_TABLE, 0, id, 3), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank >= tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) \
+	
+	//CHOICE_BUTTON_FOCUS_VIS( itemNum, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), ;, LOCAL_ITEM_SHOW( p_itemname, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), offset ), ;, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) ) 
+	//TEXT_DRAW_ALIGNED_EXP( GAMEINFO_ORIGIN (GAMEINFO_WIDTH-8) GAMEINFO_HEIGHT2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 4 (GAMEINFO_HEIGHT+12), dvarString(tableLookup(SPRAY_TABLE, 0, id, 6)), TEXTSIZE_SMALL, 0, 0, ITEM_ALIGN_LEFT, 1 1 1 1 name "desc_"p_itemname group "map_desc_group" autowrapped, when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )\
+	//PREPROC_SHADER_DRAW_ALIGNED_VIS( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "Unlocked at level: ^3"tableLookup(SPRAY_TABLE, 0, id, 2), 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_itemname group "map_image_group", when(rank < tableLookup(SPRAY_TABLE, 0, id, 2) && dvarString("ui_sprays_page") == page) )
+
+#define LOCAL_GROUP_IMAGE(pname, pimage) \
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, pimage, 1 1 1 1, 0, 0, 0 0 0 0 name pname group act_group )
+
+{
+	menuDef
+	{
+		name			"character_stuff"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		//soundloop 		"music_mainmenu_mp"
+		onOpen
+		{
+			//hide act_group;
+			setLocalVarInt ui_hide_act_button 0;		
+			show character;
+		}
+		onEsc			{	close "character_stuff";	}
+		onClose			{}
+		#include "ui/blurredbg.inc"
+		//#include "ui_mp/navcontrols.inc"
+		
+		CHOICE_MENU_TITLE( "Customize Character" )
+					
+		/*#ifdef PC
+			PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "brax_logo", 1 1 1 1, 0, 0, 0 0 0 0 )
+		#endif*/
+			
+		LOCAL_GROUP_IMAGE( "character", "character_sas" )
+		LOCAL_GROUP_IMAGE( "spray", "spray0_menu" )
+
+		
+		UI_EDGE_REVERSE( GAMEINFO_ORIGIN,HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0, 0, 0.1 0.1 0.1 1 ) 
+		UI_EDGE_REVERSE( GAMEINFO_ORIGIN,HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0, 0, 0.9 0.95 1 0.4 )
+		PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 5 0, "white", 0.1 0.1 0.1 1, 0, 0, 0 0 0 0 )
+		PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN (-(GAMEINFO_WIDTH)) 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 5 0, "gradient_fadein", 0.9 0.95 1 0.4, 0, 0, 0 0 0 0 )
+		PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN -80 20 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, (GAMEINFO_WIDTH-76) 0, "ui_perforation", 1 1 1 1, 0, 0, 0 0 0 0 )
+		
+		PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 20, "gradient_top", 0 0 0 .75, 0, 0, 0 0 0 0 )
+		PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 16 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 (GAMEINFO_HEIGHT-22), "gradient_bottom", 0 0 0 .75, 0, 0, 0 0 0 0 )	
+		
+		CHOICE_BUTTON_FOCUS_VIS( 1, "Select Character", hide character;open "characters", hide act_group; hide spray; show character;, ;, when( localVarInt( ui_hide_act_button ) == 0 ); )
+		CHOICE_BUTTON_FOCUS_VIS( 2, "Select Spray", hide spray; open "sprays", hide act_group; hide character; show spray;, ;, when( localVarInt( ui_hide_act_button ) == 0 ); )
+		CHOICE_BUTTON_FOCUS_VIS( 4, "Done", close "character_stuff"; open "team_select";, hide act_group;, ;, when( localVarInt( ui_hide_act_button ) == 0 ); )		
+				
+		#undef GAMEINFO_HEIGHT
+		#undef GAMEINFO_HEIGHT2
+		#define GAMEINFO_HEIGHT			258
+		#define GAMEINFO_HEIGHT2		(86+PC_OFFSET_Y)
+	}
+
+	menuDef
+	{
+		name			"characters"
+		rect			0 0 640 480
+		exp				rect X(0)
+		exp				rect Y(0)
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_FILLED
+		onOpen			{ focusFirst; setLocalVarInt ui_hide_act_button 1; hide character; }
+		onClose			{ setLocalVarInt ui_hide_act_button 0; }
+		onESC			{close self; }
+		ACT_BG( "Select Character", character )
+			
+		LOCAL_ITEM_FRAME_BG
+
+		LOCAL_CHARACTER_SELECTION( 1, "SAS", 		"sas" 		    ,"SAS Marine.", scriptMenuResponse "character_sas"; close "characters";, 0, 1 )
+		
+
+
+		// Unlocked
+		LOCAL_CHARACTER_SELECTION( 2, "Gangster",   "gangster"		,"Gangster.", scriptMenuResponse "character_gangster"; close "characters";, 1, when(rank >= 2) )
+		LOCAL_CHARACTER_SELECTION( 3, "Farmer",   	"farmer" 		,"Fat Farmer.", scriptMenuResponse "character_farmer"; close "characters";,2, when(rank >= 5) )
+		LOCAL_CHARACTER_SELECTION( 4, "Zoey",   	"zoey" 			,"Zoey - the woman ^^.", scriptMenuResponse "character_zoey"; close "characters";, 3, when(rank >= 8) )
+		LOCAL_CHARACTER_SELECTION( 5, "General Shepherd"			,"shepherd", "US Army General Shepherd.", scriptMenuResponse "character_shepherd"; close "characters";, 3, when(rank >= 11) )
+		LOCAL_CHARACTER_SELECTION( 6, "Masterchief"					,"masterchief", "Played Halo? Huh?", scriptMenuResponse "character_masterchief"; close "characters";, 3, when(rank >= 14) )
+		LOCAL_CHARACTER_SELECTION( 7, "Makarov"						,"makarov", "Friend of Zakhaev.", scriptMenuResponse "character_makarov"; close "characters";, 3, when(rank >= 15 ) )
+		LOCAL_CHARACTER_SELECTION( 8, "Juggernaut"					,"juggernaut", "Guy with very heavy armor.", scriptMenuResponse "character_juggernaut"; close "characters";, 3, when(rank >= 17 ) )
+		
+		// Locked
+		/*LOCAL_CHARACTER_SELECTION( 2, "^1Gangster", "gangster"		,"Gangster.\n^3Unlocked at level 3.", ;, 1, when( stat(981) == 0 ); )
+		LOCAL_CHARACTER_SELECTION( 3, "^1Farmer",	"farmer" 		,"Fat Farmer.\n^3Unlocked at level 6.", ;,2, when( stat(982) == 0 ); )
+		LOCAL_CHARACTER_SELECTION( 4, "^1Zoey",   	"zoey" 			,"Zoey - the woman ^^.\n^3Unlocked at lvl 9.", ;, 3, when( stat(983) == 0 ); )
+		LOCAL_CHARACTER_SELECTION( 5, "^1General Shepherd",   	"shepherd" 			,"US Army General Shepherd.\n^3Unlocked at level 12.", ;, 3, when( stat(984) == 0 ); )
+		LOCAL_CHARACTER_SELECTION( 6, "^1Masterchief",   	"masterchief" 			,"Played Halo? Huh?\n^3Unlocked at level 15.", ;, 3, when( stat(985) == 0 ); )
+		LOCAL_CHARACTER_SELECTION( 7, "^1Juggernaut",   	"juggernaut" 			,"Guy with very heavy armor.\n^3Unlocked at level 18.", ;, 3, when( stat(986) == 0 ); )
+			*/
+		LOCAL_ITEM_FRAME
+		
+		/*#ifdef PC
+			LOCAL_BACK_BUTTON
+		#endif*/
+	}
+
+
+	menuDef
+	{
+		name			"sprays"
+		rect			0 0 640 480
+		exp				rect X(0)
+		exp				rect Y(0)
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_FILLED
+		onOpen			{ focusFirst; setLocalVarInt ui_hide_act_button 1; execnow "set ui_sprays_page 0" }
+		onClose			{ setLocalVarInt ui_hide_act_button 0; }
+		onESC			{close self; }
+		ACT_BG( "Select Spray", spray )
+			
+		LOCAL_ITEM_FRAME_BG
+
+		//LOCAL_SPRAY_SELECTION( itemNum, p_itemname, id, offset, page )
+
+		// page 0
+		LOCAL_SPRAY_LOCKED( 1, "s1", 1, 0, "0" )
+		LOCAL_SPRAY_LOCKED( 2, "s2", 2, 1, "0" )
+		LOCAL_SPRAY_LOCKED( 3, "s3", 3, 2, "0" )
+		LOCAL_SPRAY_LOCKED( 4, "s4", 4, 3, "0" )
+		LOCAL_SPRAY_LOCKED( 5, "s5", 5, 4, "0" )
+		LOCAL_SPRAY_LOCKED( 6, "s6", 6, 5, "0" )
+		LOCAL_SPRAY_LOCKED( 7, "s7", 7, 6, "0" )
+		LOCAL_SPRAY_LOCKED( 8, "s8", 8, 7, "0" )
+		LOCAL_SPRAY_LOCKED( 9, "s9", 9, 8, "0" )
+		LOCAL_SPRAY_LOCKED( 10, "s10", 10, 9, "0" )
+		LOCAL_SPRAY_LOCKED( 11, "s11", 11, 10, "0" )
+
+		LOCAL_SPRAY_UNLOCKED( 1, "s1", 1, 0, "0" )
+		LOCAL_SPRAY_UNLOCKED( 2, "s2", 2, 1, "0" )
+		LOCAL_SPRAY_UNLOCKED( 3, "s3", 3, 2, "0" )
+		LOCAL_SPRAY_UNLOCKED( 4, "s4", 4, 3, "0" )
+		LOCAL_SPRAY_UNLOCKED( 5, "s5", 5, 4, "0" )
+		LOCAL_SPRAY_UNLOCKED( 6, "s6", 6, 5, "0" )
+		LOCAL_SPRAY_UNLOCKED( 7, "s7", 7, 6, "0" )
+		LOCAL_SPRAY_UNLOCKED( 8, "s8", 8, 7, "0" )
+		LOCAL_SPRAY_UNLOCKED( 9, "s9", 9, 8, "0" )
+		LOCAL_SPRAY_UNLOCKED( 10, "s10", 10, 9, "0" )
+		LOCAL_SPRAY_UNLOCKED( 11, "s11", 11, 10, "0" )
+
+		// page 1
+		LOCAL_SPRAY_LOCKED( 1, "s1", 12, 0, "1" )
+		LOCAL_SPRAY_LOCKED( 2, "s2", 13, 1, "1" )
+		LOCAL_SPRAY_LOCKED( 3, "s3", 14, 2, "1" )
+		LOCAL_SPRAY_LOCKED( 4, "s4", 15, 3, "1" )
+		LOCAL_SPRAY_LOCKED( 5, "s5", 16, 4, "1" )
+		LOCAL_SPRAY_LOCKED( 6, "s6", 17, 5, "1" )
+		LOCAL_SPRAY_LOCKED( 7, "s7", 18, 6, "1" )
+		LOCAL_SPRAY_LOCKED( 8, "s8", 19, 7, "1" )
+		LOCAL_SPRAY_LOCKED( 9, "s9", 20, 8, "1" )
+		LOCAL_SPRAY_LOCKED( 10, "s10", 21, 9, "1" )
+		
+		LOCAL_SPRAY_UNLOCKED( 1, "s1", 12, 0, "1" )
+		LOCAL_SPRAY_UNLOCKED( 2, "s2", 13, 0, "1" )
+		LOCAL_SPRAY_UNLOCKED( 1, "s1", 12, 0, "1" )
+		LOCAL_SPRAY_UNLOCKED( 2, "s2", 13, 1, "1" )
+		LOCAL_SPRAY_UNLOCKED( 3, "s3", 14, 2, "1" )
+		LOCAL_SPRAY_UNLOCKED( 4, "s4", 15, 3, "1" )
+		LOCAL_SPRAY_UNLOCKED( 5, "s5", 16, 4, "1" )
+		LOCAL_SPRAY_UNLOCKED( 6, "s6", 17, 5, "1" )
+		LOCAL_SPRAY_UNLOCKED( 7, "s7", 18, 6, "1" )
+		LOCAL_SPRAY_UNLOCKED( 8, "s8", 19, 7, "1" )
+		LOCAL_SPRAY_UNLOCKED( 9, "s9", 20, 8, "1" )
+		LOCAL_SPRAY_UNLOCKED( 10, "s10", 21, 9, "1" )//*/
+
+		CHOICE_BUTTON_VIS( 13, "^3Next Page >>", play "mouse_click"; execnow "ui_sprays_page 1";, when( dvarString( "ui_sprays_page" ) == "0" ) )
+		CHOICE_BUTTON_VIS( 13, "^3<< Previous Page", play "mouse_click"; execnow "ui_sprays_page 0";, when( dvarString( "ui_sprays_page" ) == "1" ) )
+		//CHOICE_BUTTON_FOCUS_VIS( 13, "^3Next Page >>", execnow "ui_sprays_page 1", ;, ;, when( dvarString( "ui_sprays_page" ) == "0" ) )
+		//CHOICE_BUTTON_FOCUS_VIS( 13, "^3Previous Page <<", execnow "ui_sprays_page 0", ;, ;, when( dvarString( "ui_sprays_page" ) == "1" ) )
+			
+		//CHOICE_BUTTON_FOCUS_VIS( itemNum, dvarString(tableLookup(SPRAY_TABLE, 0, id, 5)), scriptMenuResponse "spray"id; close "sprays";, , ;, dvarString("ui_sprays_page") == "0" )
+		// Unlocked
+		/*LOCAL_SPRAY_SELECTION( 2, "Devil is angry", "1"		,"Devil is angry.", scriptMenuResponse "spray1"; close "sprays";, 1, when( rank >= 1) )
+		LOCAL_SPRAY_SELECTION( 3, "Head shot",		"2" 	,"Head shot (-*-)", scriptMenuResponse "spray2"; close "sprays";, 2, when( rank >= 3 ) )
+		LOCAL_SPRAY_SELECTION( 4, "Fuck yea",		"3" 	,"Fuck yea!", scriptMenuResponse "spray3"; close "sprays";, 3, when( rank >= 5 ) )
+		LOCAL_SPRAY_SELECTION( 5, "Mega face palm",	"4" 	,"Mega face palm.", scriptMenuResponse "spray4"; close "sprays";, 4, when( rank >= 7 ) )
+		LOCAL_SPRAY_SELECTION( 6, "Noob",			"5" 	,"Noob.", scriptMenuResponse "spray5"; close "sprays";, 5, when( rank >= 9 ) )
+		LOCAL_SPRAY_SELECTION( 7, "Unlucky",		"6" 	,"Unlucky.", scriptMenuResponse "spray6"; close "sprays";, 6, when( rank >= 11 ) )
+		LOCAL_SPRAY_SELECTION( 8, "Jackass",		"7" 	,"Jackass.", scriptMenuResponse "spray7"; close "sprays";, 7, when( rank >= 13 ) )
+		LOCAL_SPRAY_SELECTION( 9, "Worm",			"8" 	,"Worm.", scriptMenuResponse "spray8"; close "sprays";, 8, when( rank >= 15 ) )
+		LOCAL_SPRAY_SELECTION( 10, "Sexy girl",		"9" 	,"Sexy girl.", scriptMenuResponse "spray9"; close "sprays";, 9, when( rank >= 17 ) )
+		LOCAL_SPRAY_SELECTION( 11, "Zoey licker",	"10" 	,"No comment...", scriptMenuResponse "spray10"; close "sprays";, 10, when( rank >= 18 ) )
+*/
+		//LOCAL_SPRAY_SELECTION( 13, "BraX's Spray",	"brax" 	,"Spray for BRAX ONLY ;)", scriptMenuResponse "spray_brax"; close "sprays";, 10, when( stat(989) == 1 ); )
+
+		// Locked
+		/*LOCAL_SPRAY_SELECTION( 2, "Devil is angry", "1"		,"Devil is angry.", scriptMenuResponse "spray1"; close "sprays";, 1, when( rank < 1) )
+		LOCAL_SPRAY_SELECTION( 3, "Head shot",		"2" 	,"Head shot (-*-)", scriptMenuResponse "spray2"; close "sprays";, 2, when( rank < 3 ) )
+		LOCAL_SPRAY_SELECTION( 4, "Fuck yea",		"3" 	,"Fuck yea!", scriptMenuResponse "spray3"; close "sprays";, 3, when( rank < 5 ) )
+		LOCAL_SPRAY_SELECTION( 5, "Mega face palm",	"4" 	,"Mega face palm.", scriptMenuResponse "spray4"; close "sprays";, 4, when( rank < 7 ) )
+		LOCAL_SPRAY_SELECTION( 6, "Noob",			"5" 	,"Noob.", scriptMenuResponse "spray5"; close "sprays";, 5, when( rank < 9 ) )
+		LOCAL_SPRAY_SELECTION( 7, "Unlucky",		"6" 	,"Unlucky.", scriptMenuResponse "spray6"; close "sprays";, 6, when( rank < 11 ) )
+		LOCAL_SPRAY_SELECTION( 8, "Jackass",		"7" 	,"Jackass.", scriptMenuResponse "spray7"; close "sprays";, 7, when( rank < 13 ) )
+		LOCAL_SPRAY_SELECTION( 9, "Worm",			"8" 	,"Worm.", scriptMenuResponse "spray8"; close "sprays";, 8, when( rank < 15 ) )
+		LOCAL_SPRAY_SELECTION( 10, "Sexy girl",		"9" 	,"Sexy girl.", scriptMenuResponse "spray9"; close "sprays";, 9, when( rank < 17 ) )
+		LOCAL_SPRAY_SELECTION( 11, "Zoey licker",	"10" 	,"Smoker lick Zoey.", scriptMenuResponse "spray10"; close "sprays";, 10, when( rank < 18 ) )*/
+
+		
+		LOCAL_ITEM_FRAME
+
+		/*#ifdef PC
+			LOCAL_BACK_BUTTON
+		#endif*/
+	}
+}
+
