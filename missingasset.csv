@@ -1,0 +1,121 @@
+material,loadscreen_mp_dr_bananaphone
+material,loadscreen_mp_dr_bananaphone_v2
+material,loadscreen_mp_deathrun_darkness
+material,loadscreen_mp_deathrun_dungeon
+material,loadscreen_mp_deathrun_glass
+material,loadscreen_mp_deathrun_long
+material,loadscreen_mp_deathrun_grassy
+material,loadscreen_mp_deathrun_poison
+material,loadscreen_mp_deathrun_portal
+material,loadscreen_mp_deathrun_short_v4
+material,loadscreen_mp_deathrun_supermario
+material,loadscreen_mp_deathrun_takecare
+material,loadscreen_mp_deathrun_watchit
+material,loadscreen_mp_deathrun_watchit_v2
+material,loadscreen_mp_deathrun_watchit_v3
+material,loadscreen_mp_deathrun_portal_v3
+material,loadscreen_mp_deathrun_grassy_v4
+material,loadscreen_mp_deathrun_rainy_v2
+fx,semtex/smoke/fx_trail_grenade
+xmodel,viewmodel_bo_galil
+xmodel,worldmodel_bo_galil
+material,hud_mw2_magnum
+xanim,viewmodel_galil_idle_loop
+xanim,viewmodel_galil_fire
+xanim,viewmodel_galil_dualclip_reload_quick
+xanim,viewmodel_galil_dualclip_reload_empty_quick
+xanim,viewmodel_galil_pullout
+xanim,viewmodel_galil_first_raise
+xanim,viewmodel_galil_putaway
+xanim,viewmodel_galil_pullout_quick
+xanim,viewmodel_galil_putaway_quick
+xanim,viewmodel_galil_sprint_in
+xanim,viewmodel_galil_sprint_loop
+xanim,viewmodel_galil_sprint_out
+xanim,viewmodel_galil_ads_fire
+xanim,viewmodel_galil_elbit_ads_up
+xanim,viewmodel_galil_elbit_ads_down
+fx,none
+fx,sprint for longer distances.
+fx,longer breath for steadier aim.
+fx,increased bullet damage.
+fx,increased hipfire accuracy.
+fx,increased rate of fire.
+fx,faster reloading.
+fx,increased health.
+menufile,ui_mp/scriptmenus/dr_characters.menu
+menufile,ui_mp/scriptmenus/dr_sprays.menu
+menufile,ui_mp/scriptmenus/dr_weapons.menu
+menufile,ui_mp/scriptmenus/dr_abilities.menu
+rawfile,maps/mp/mp_deathrun_cookie_fx.gsc
+rawfile,maps/createfx/mp_deathrun_cookie_fx.gsc
+rawfile,vision/mp_deathrun_cookie.vision
+material,loadscreen_mp_dr_bananaphone
+material,loadscreen_mp_dr_bananaphone_v2
+material,loadscreen_mp_deathrun_darkness
+material,loadscreen_mp_deathrun_dungeon
+material,loadscreen_mp_deathrun_glass
+material,loadscreen_mp_deathrun_long
+material,loadscreen_mp_deathrun_grassy
+material,loadscreen_mp_deathrun_poison
+material,loadscreen_mp_deathrun_portal
+material,loadscreen_mp_deathrun_short_v4
+material,loadscreen_mp_deathrun_supermario
+material,loadscreen_mp_deathrun_takecare
+material,loadscreen_mp_deathrun_watchit
+material,loadscreen_mp_deathrun_watchit_v2
+material,loadscreen_mp_deathrun_watchit_v3
+material,loadscreen_mp_deathrun_portal_v3
+material,loadscreen_mp_deathrun_grassy_v4
+material,loadscreen_mp_deathrun_rainy_v2
+xmodel,viewmodel_bo_galil
+xmodel,worldmodel_bo_galil
+material,hud_mw2_magnum
+xanim,viewmodel_galil_idle_loop
+xanim,viewmodel_galil_fire
+xanim,viewmodel_galil_dualclip_reload_quick
+xanim,viewmodel_galil_dualclip_reload_empty_quick
+xanim,viewmodel_galil_pullout
+xanim,viewmodel_galil_first_raise
+xanim,viewmodel_galil_putaway
+xanim,viewmodel_galil_pullout_quick
+xanim,viewmodel_galil_putaway_quick
+xanim,viewmodel_galil_sprint_in
+xanim,viewmodel_galil_sprint_loop
+xanim,viewmodel_galil_sprint_out
+xanim,viewmodel_galil_ads_fire
+xanim,viewmodel_galil_elbit_ads_up
+xanim,viewmodel_galil_elbit_ads_down
+fx,none
+fx,sprint for longer distances.
+fx,longer breath for steadier aim.
+fx,increased bullet damage.
+fx,increased hipfire accuracy.
+fx,increased rate of fire.
+fx,faster reloading.
+fx,increased health.
+menufile,ui_mp/scriptmenus/dr_characters.menu
+menufile,ui_mp/scriptmenus/dr_sprays.menu
+menufile,ui_mp/scriptmenus/dr_weapons.menu
+menufile,ui_mp/scriptmenus/dr_abilities.menu
+rawfile,vision/mp_deathrun_cookie.vision
+rawfile,maps/mp/mp_deathrun_cookie_fx.gsc
+rawfile,maps/createfx/mp_deathrun_cookie_fx.gsc
+material,loadscreen_mp_dr_bananaphone
+material,loadscreen_mp_dr_bananaphone_v2
+material,loadscreen_mp_deathrun_darkness
+material,loadscreen_mp_deathrun_dungeon
+material,loadscreen_mp_deathrun_glass
+material,loadscreen_mp_deathrun_long
+material,loadscreen_mp_deathrun_grassy
+material,loadscreen_mp_deathrun_poison
+material,loadscreen_mp_deathrun_portal
+material,loadscreen_mp_deathrun_short_v4
+material,loadscreen_mp_deathrun_supermario
+material,loadscreen_mp_deathrun_takecare
+material,loadscreen_mp_deathrun_watchit
+material,loadscreen_mp_deathrun_watchit_v2
+material,loadscreen_mp_deathrun_watchit_v3
+material,loadscreen_mp_deathrun_portal_v3
+material,loadscreen_mp_deathrun_grassy_v4
+material,loadscreen_mp_deathrun_rainy_v2
