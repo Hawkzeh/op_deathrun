@@ -1,0 +1,236 @@
+///////////////////////////////////////////////////////
+///|         |///|        |///|       |/\  \/////  ////
+///|  |////  |///|  |//|  |///|  |/|  |//\  \///  /////
+///|  |////  |///|  |//|  |///|  |/|  |///\  \/  //////
+///|          |//|  |//|  |///|       |////\    ///////
+///|  |////|  |//|         |//|  |/|  |/////    \//////
+///|  |////|  |//|  |///|  |//|  |/|  |////  /\  \/////
+///|          |//|__|///|__|//|__|/|__|///  ///\  \////
+/////////////////////////////////////////__/////\__\///
+///////////////////////////////////////////////////////
+//
+//	Xfire : maciusiak
+//
+//
+
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+
+REFERENCE           0
+LANG_ENGLISH        "Welcome to the server!"
+
+REFERENCE           1
+LANG_ENGLISH        "Hope you enjoy your time here!"
+
+REFERENCE           2
+LANG_ENGLISH        "New player"
+
+REFERENCE           3
+LANG_ENGLISH        "Still kinda new"
+
+REFERENCE           4
+LANG_ENGLISH        "Yeah, still new"
+
+REFERENCE           5
+LANG_ENGLISH        "You're nowhere near old yet, mate."
+
+REFERENCE           6
+LANG_ENGLISH        "Still got a while, not gonna lie."
+
+REFERENCE           7
+LANG_ENGLISH        "Slowly but surely.."
+
+REFERENCE           8
+LANG_ENGLISH        "Aww, you lil' young'in."
+
+REFERENCE           9
+LANG_ENGLISH        "Nice XP, does it come in mens?"
+
+REFERENCE           10
+LANG_ENGLISH        "Ten down, twenty to go."
+
+REFERENCE           11
+LANG_ENGLISH        "A little bit older, nice."
+
+REFERENCE           12
+LANG_ENGLISH        "Very slightly older"
+
+REFERENCE           13
+LANG_ENGLISH        "Still got a while to go.."
+
+REFERENCE           14
+LANG_ENGLISH        "A long while.."
+
+REFERENCE           15
+LANG_ENGLISH        "Fifteen down, fifty five to go, lolol."
+
+REFERENCE           16
+LANG_ENGLISH        "You're getting there.."
+
+REFERENCE           17
+LANG_ENGLISH        "Not too bad.."
+
+REFERENCE           18
+LANG_ENGLISH        "Slightly better than others.."
+
+REFERENCE           19
+LANG_ENGLISH        "You're not really close tbh.."
+
+REFERENCE           20
+LANG_ENGLISH        "My name's Hawkzeh btw."
+
+REFERENCE           21
+LANG_ENGLISH        "I made these ranks, lol."
+
+REFERENCE           22
+LANG_ENGLISH        "This is a good time to promo my YT channel."
+
+REFERENCE           23
+LANG_ENGLISH        "youtube.com/hawkzeh"
+
+REFERENCE           24
+LANG_ENGLISH        "Go subscribe and stuff!"
+
+REFERENCE           25
+LANG_ENGLISH        "You're getting closer.."
+
+REFERENCE           26
+LANG_ENGLISH        "Not there, but closer."
+
+REFERENCE           27
+LANG_ENGLISH        "Almost there!"
+
+REFERENCE           28
+LANG_ENGLISH        "Two more!"
+
+REFERENCE           29
+LANG_ENGLISH        "ONE MORE!"
+
+REFERENCE			30
+LANG_ENGLISH		"YOU WIN!"
+
+REFERENCE           31
+LANG_ENGLISH        "H4H4H4H4H4H4H KIDDING!"
+
+REFERENCE           32
+LANG_ENGLISH        "There are seventy levels now.."
+
+REFERENCE           33
+LANG_ENGLISH        "Later on, it gets muuuch harder to level."
+
+REFERENCE           34
+LANG_ENGLISH        "Oh cool! Half way there!"
+
+REFERENCE           35
+LANG_ENGLISH        "You've done a pretty good job so far."
+
+REFERENCE           36
+LANG_ENGLISH        "Not as good as Hawkzeh though.."
+
+REFERENCE           37
+LANG_ENGLISH        "These ranks took about seven hours to do."
+
+REFERENCE           38
+LANG_ENGLISH        "How cool are the rank icons?!"
+
+REFERENCE           39
+LANG_ENGLISH        "Hawkzeh fan club!"
+
+REFERENCE           40
+LANG_ENGLISH        "Thirty to go.."
+
+REFERENCE           41
+LANG_ENGLISH        "Still a while."
+
+REFERENCE           42
+LANG_ENGLISH        "Your skill level has improved."
+
+REFERENCE           43
+LANG_ENGLISH        "I actually want to spectate you sometimes."
+
+REFERENCE           44
+LANG_ENGLISH        "Work on your strafes, bruv."
+
+REFERENCE           45
+LANG_ENGLISH        "Gettin' there."
+
+REFERENCE           46
+LANG_ENGLISH        "It all adds up!"
+
+REFERENCE           47
+LANG_ENGLISH        "You're actually not that bad now!"
+
+REFERENCE           48
+LANG_ENGLISH        "Keep going!"
+
+REFERENCE           49
+LANG_ENGLISH        "Not that far away now.."
+
+REFERENCE           50
+LANG_ENGLISH        "Twenty more to go!"
+
+REFERENCE           51
+LANG_ENGLISH        "You're gonna love the next few ranks."
+
+REFERENCE           52
+LANG_ENGLISH        "I have a special surprise for you.."
+
+REFERENCE           53
+LANG_ENGLISH        "Ohohohohoh, just you wait."
+
+REFERENCE           54
+LANG_ENGLISH        "You're gonna need to put in effort."
+
+REFERENCE           55
+LANG_ENGLISH        "You're gonna love level 60-61."
+
+REFERENCE           56
+LANG_ENGLISH        "Sooo.. grindy.."
+
+REFERENCE           57
+LANG_ENGLISH        "We use the WoW XP table btw.."
+
+REFERENCE           58
+LANG_ENGLISH        "So if you play WoW, you'll know what's coming soon.."
+
+REFERENCE           59
+LANG_ENGLISH        "Brace yourselves.."
+
+REFERENCE           60
+LANG_ENGLISH        "284,200XP until the next rank, UMAD?!"
+
+REFERENCE			61
+LANG_ENGLISH		"Jesus, you made it!"
+
+REFERENCE           62
+LANG_ENGLISH        "Don't give up now!"
+
+REFERENCE           63
+LANG_ENGLISH        "Your skill level is off the charts!"
+
+REFERENCE           64
+LANG_ENGLISH        "You're freaking pro now!"
+
+REFERENCE           65
+LANG_ENGLISH        "Just.. a little.. further!"
+
+REFERENCE           66
+LANG_ENGLISH        "You're aaaaaalmost there!"
+
+REFERENCE           67
+LANG_ENGLISH        "Not long now!"
+
+REFERENCE           68
+LANG_ENGLISH        "TWO TO GO.."
+
+REFERENCE           69
+LANG_ENGLISH        "ONE TO GO.."
+
+REFERENCE           70
+LANG_ENGLISH        "^3You ^2win ^3the internet!^7"
+
+ENDMARKER
+
+
