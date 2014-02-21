@@ -104,16 +104,16 @@
 		}
 
 
-		DR_BUTTON( "0", 100, 110, 180, 20, "@DRM_PLAY", scriptMenuResponse "autoassign";, 1 )
-		DR_BUTTON( "1", 100, 135, 180, 20, "@DRM_SPECTATE", scriptMenuResponse "spectator";, 1 )
+		DR_BUTTON( "0", 143, 110, 168, 20, "@DRM_PLAY", scriptMenuResponse "autoassign";, 1 )
+		DR_BUTTON( "1", 143, 135, 168, 20, "@DRM_SPECTATE", scriptMenuResponse "spectator";, 1 )
 
-		DR_BUTTON( "2", 100, 170, 180, 20, "@DRM_CHARACTER", scriptMenuResponse "character_menu";, 1 )
+		DR_BUTTON( "2", 143, 170, 168, 20, "@DRM_CHARACTER", scriptMenuResponse "character_menu";, 1 )
 		
-		DR_BUTTON( "3", 100, 195, 180, 20, "@DRM_HELP", close self; open dr_help;, 1 )
-		DR_BUTTON( "4", 100, 220, 180, 20, "@DRM_OPTIONS", close self; open dr_options;, 1 )
-		DR_BUTTON( "5", 100, 255, 180, 20, "@MENU_LEAVE_GAME", open popup_endgame;, 1 )
+		DR_BUTTON( "3", 143, 195, 168, 20, "@DRM_HELP", close self; open dr_help;, 1 )
+		DR_BUTTON( "4", 143, 220, 168, 20, "@DRM_OPTIONS", close self; open dr_options;, 1 )
+		DR_BUTTON( "5", 143, 255, 168, 20, "@MENU_LEAVE_GAME", open popup_endgame;, 1 )
 
-		DR_BUTTON( "6", 100, 280, 180, 20, "^3VIP", open "vip";, when( dvarInt( "vip" ) == 1 ) )
+		DR_BUTTON( "6", 143, 280, 168, 20, "^3VIP", open "vip";, when( dvarInt( "vip" ) == 1 ) )
 
 		itemDef
 		{
