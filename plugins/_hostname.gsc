@@ -8,7 +8,7 @@ init( modVers )
 		
 	addDvar( "pi_hn_time", "plugin_hostname_updatetime", 10, 2, 60, "int" );
 	if( getDvar( "sv_newhostname" ) == "" )
-		setDvar( "sv_newhostname", "^1[^3oP^1] ^3Deathrun ^5New maps ^7Rounds^1: ^2PIHN_ROUND^7/PIHN_MAXROUNDS" );
+		setDvar( "sv_newhostname", "^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^2PIHN_ROUND^7/PIHN_MAXROUNDS" );
 	
 	wait 1;
 	

@@ -13,28 +13,28 @@
 //rawfile,brax/_ac130.gsc
 
 // Scripts
-rawfile,braxi/_admin.gsc
+//rawfile,braxi/_admin.gsc
 //rawfile,braxi/_bots.gsc
-rawfile,braxi/_cod4stuff.gsc
-rawfile,braxi/_common.gsc
-rawfile,braxi/_credits.gsc
-rawfile,braxi/_dvar.gsc
-rawfile,braxi/_maps.gsc
-rawfile,braxi/_mapvoting.gsc
-rawfile,braxi/_menus.gsc
-rawfile,braxi/_missions.gsc
-rawfile,braxi/_playercard.gsc
-rawfile,braxi/_mod.gsc
-rawfile,braxi/_rank.gsc
-rawfile,braxi/_scoreboard.gsc
-rawfile,braxi/_teams.gsc
-rawfile,plugins/_plugins.gsc
+//rawfile,braxi/_cod4stuff.gsc
+//rawfile,braxi/_common.gsc
+//rawfile,braxi/_credits.gsc
+//rawfile,braxi/_dvar.gsc
+//rawfile,braxi/_maps.gsc
+//rawfile,braxi/_mapvoting.gsc
+//rawfile,braxi/_menus.gsc
+//rawfile,braxi/_missions.gsc
+//rawfile,braxi/_playercard.gsc
+//rawfile,braxi/_mod.gsc
+//rawfile,braxi/_rank.gsc
+//rawfile,braxi/_scoreboard.gsc
+//rawfile,braxi/_teams.gsc
+//rawfile,plugins/_plugins.gsc
 
-rawfile,maps/mp/gametypes/_callbacksetup.gsc
-rawfile,maps/mp/gametypes/_gametypes.txt
-rawfile,maps/mp/gametypes/_persistence.gsc
-rawfile,maps/mp/gametypes/_hud_util.gsc
-rawfile,maps/mp/gametypes/deathrun.gsc
+//rawfile,maps/mp/gametypes/_callbacksetup.gsc
+//rawfile,maps/mp/gametypes/_gametypes.txt
+//rawfile,maps/mp/gametypes/_persistence.gsc
+//rawfile,maps/mp/gametypes/_hud_util.gsc
+//rawfile,maps/mp/gametypes/deathrun.gsc
 rawfile,maps/mp/gametypes/deathrun.txt
 rawfile,cleanup.cfg
 rawfile,DeathRun_ReadMe.txt
@@ -500,3 +500,85 @@ xanim,viewmodel_mw2_magnum_sprint_out
 
 
 sound,magnum_mw2,,all_mp
+
+
+# Playermodel
+xmodel,playermodel_dnf_duke
+
+# Hands
+xmodel,viewhands_dnf_duke
+
+# Materials
+material,mtl_plr_dnf_duke_body
+material,mtl_plr_dnf_duke_glasses
+material,mtl_plr_dnf_duke_glasses_lens
+material,mtl_plr_dnf_duke_hand
+material,mtl_plr_dnf_duke_head
+
+
+xmodel,playermodel_baa_joker
+
+material,mtl_plr_baa_joker_body
+material,mtl_plr_baa_joker_hair
+material,mtl_plr_baa_joker_head
+
+# <------------------------------------------------------------------> #
+# Army of Two CHARACTERS
+# <------------------------------------------------------------------> #
+
+
+# <--------COMMON-----------> #
+material,mtl_aot_buttpack
+material,mtl_aot_crounch
+material,mtl_aot_heavy_chin_armor
+material,mtl_aot_heavy_leg_armor
+material,mtl_aot_heavy_shoulder_pad
+material,mtl_aot_super_shoulder
+
+
+# <--------SALEM-----------> #
+
+# Materials
+material,mtl_aot_rosco_body_93
+material,mtl_aot_rosco_head_93
+
+material,mtl_aot_rosco_body_00
+material,mtl_aot_rosco_head_00
+material,mtl_aot_rosco_hair
+material,mtl_aot_rosco_mask
+material,mtl_aot_rosco_shoulder
+material,mtl_aot_rosco_thigh
+material,mtl_aot_rosco_tibia
+material,mtl_aot_3rd_armor_rosco
+
+# Models
+xmodel,playermodel_aot_rosco_93
+xmodel,playermodel_aot_rosco_00_light
+xmodel,playermodel_aot_rosco_00_med
+xmodel,playermodel_aot_rosco_00_heavy
+
+
+# <--------RIOS-----------> #
+
+# Materials
+material,mtl_aot_novak_body_93
+material,mtl_aot_novak_head_93
+
+material,mtl_aot_novak_body_00
+material,mtl_aot_novak_head_00
+material,mtl_aot_novak_mask
+material,mtl_aot_novak_shoulder
+material,mtl_aot_novak_thigh
+material,mtl_aot_rosco_tibia
+material,mtl_aot_3rd_armor_novak
+
+# Models
+xmodel,playermodel_aot_novak_93
+xmodel,playermodel_aot_novak_00_light
+xmodel,playermodel_aot_novak_00_med
+xmodel,playermodel_aot_novak_00_heavy
+
+
+# <------------------------------------------------------------------> #
+# <<<<<<<<<END>>>>>>>>>
+# <------------------------------------------------------------------> #

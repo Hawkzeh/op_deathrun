@@ -109,7 +109,8 @@ Menu()
     self.points.vertAlign = "bottom";
 	self.points.glowAlpha = 1;
 	self.points.glowColor = level.randomcolour;
-	self.points.label = &"Your Points: ^3";	
+	self.points.color = (1, 1.0, 1);
+	self.points.label = &"^3Your Points: ^7";	
 	self.points.sort = 103;
 
 	if(isDefined(self.pers["money"]))

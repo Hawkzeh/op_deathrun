@@ -1412,3 +1412,737 @@
  10:27 A: bot26 ; guid: 
  10:41 ShutdownGame:
  10:41 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 21:51 ShutdownGame:
+ 21:51 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  5:44 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  7:20 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  8:45 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  9:42 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 10:43 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 12:54 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 12:58 ShutdownGame:
+ 12:58 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  3:18 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  3:22 ShutdownGame:
+  3:22 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:20 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  1:03 J;;1;bot0
+  1:24 J;;3;bot2
+  1:24 J;;2;bot1
+  1:27 ShutdownGame:
+  1:27 ------------------------------------------------------------
+  1:27 ------------------------------------------------------------
+  1:27 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:32 A: bot1 ; guid: 
+  2:25 ShutdownGame:
+  2:25 ------------------------------------------------------------
+  2:25 ------------------------------------------------------------
+  2:25 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^22^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:31 A: bot2 ; guid: 
+  4:53 ShutdownGame:
+  4:53 ------------------------------------------------------------
+  4:53 ------------------------------------------------------------
+  4:53 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^23^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  4:59 A: Modtest ; guid: ad2bbbd0ba69adabab164b82f6e389d4
+ 14:36 ShutdownGame:
+ 14:36 ------------------------------------------------------------
+ 14:36 ------------------------------------------------------------
+ 14:36 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^23^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 14:37 ExitLevel: executed
+ 14:38 ShutdownGame:
+ 14:38 ------------------------------------------------------------
+ 14:38 ------------------------------------------------------------
+ 14:38 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 15:05 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 15:07 ShutdownGame:
+ 15:07 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:33 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  0:47 J;;3;bot2
+  0:47 J;;2;bot1
+  0:47 J;;1;bot0
+  0:50 ShutdownGame:
+  0:50 ------------------------------------------------------------
+  0:50 ------------------------------------------------------------
+  0:50 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:55 A: bot0 ; guid: 
+  2:22 ShutdownGame:
+  2:22 ------------------------------------------------------------
+  2:22 ------------------------------------------------------------
+  2:22 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^22^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:27 A: bot1 ; guid: 
+ 10:20 ShutdownGame:
+ 10:20 ------------------------------------------------------------
+ 10:20 ------------------------------------------------------------
+ 10:20 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^23^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 10:25 A: bot0 ; guid: 
+ 12:58 ShutdownGame:
+ 12:58 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  0:20 J;;3;bot2
+  0:20 J;;2;bot1
+  0:20 J;;1;bot0
+  0:23 ShutdownGame:
+  0:23 ------------------------------------------------------------
+  0:23 ------------------------------------------------------------
+  0:23 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:28 A: bot0 ; guid: 
+  0:39 ShutdownGame:
+  0:39 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:14 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  0:21 J;;3;bot2
+  0:21 J;;2;bot1
+  0:21 J;;1;bot0
+  0:24 ShutdownGame:
+  0:24 ------------------------------------------------------------
+  0:24 ------------------------------------------------------------
+  0:24 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:29 A: bot2 ; guid: 
+  6:41 ShutdownGame:
+  6:41 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  0:26 J;;3;bot2
+  0:26 J;;2;bot1
+  0:26 J;;1;bot0
+  0:29 ShutdownGame:
+  0:29 ------------------------------------------------------------
+  0:29 ------------------------------------------------------------
+  0:29 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:34 A: bot1 ; guid: 
+  1:01 ShutdownGame:
+  1:01 ------------------------------------------------------------
+  1:01 ------------------------------------------------------------
+  1:01 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^22^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:07 A: Modtest ; guid: ad2bbbd0ba69adabab164b82f6e389d4
+  3:29 ShutdownGame:
+  3:29 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:14 J;;2;bot2
+  0:14 J;;1;bot1
+  0:14 J;;0;bot0
+  0:17 ShutdownGame:
+  0:17 ------------------------------------------------------------
+  0:17 ------------------------------------------------------------
+  0:17 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:22 A: bot1 ; guid: 
+  0:23 J;ad2bbbd0ba69adabab164b82f6e389d4;3;Modtest
+  1:35 ShutdownGame:
+  1:35 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  1:17 ShutdownGame:
+  1:17 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:55 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  1:32 ShutdownGame:
+  1:32 ------------------------------------------------------------
+  1:32 ------------------------------------------------------------
+  1:32 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:32 ExitLevel: executed
+  1:34 ShutdownGame:
+  1:34 ------------------------------------------------------------
+  1:34 ------------------------------------------------------------
+  1:34 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:45 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  1:49 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  2:49 ShutdownGame:
+  2:49 ------------------------------------------------------------
+  2:49 ------------------------------------------------------------
+  2:49 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:50 ExitLevel: executed
+  2:51 ShutdownGame:
+  2:51 ------------------------------------------------------------
+  2:51 ------------------------------------------------------------
+  2:51 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  3:21 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  3:24 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+  5:04 J;;3;bot2
+  5:04 J;;2;bot1
+  5:04 J;;1;bot0
+  5:07 ShutdownGame:
+  5:07 ------------------------------------------------------------
+  5:07 ------------------------------------------------------------
+  5:07 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  5:12 A: bot2 ; guid: 
+ 11:34 ShutdownGame:
+ 11:34 ------------------------------------------------------------
+ 11:34 ------------------------------------------------------------
+ 11:34 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 11:35 ExitLevel: executed
+ 11:37 ShutdownGame:
+ 11:37 ------------------------------------------------------------
+ 11:37 ------------------------------------------------------------
+ 11:37 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 11:48 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 11:51 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 15:01 ShutdownGame:
+ 15:01 ------------------------------------------------------------
+ 15:01 ------------------------------------------------------------
+ 15:01 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 15:02 ExitLevel: executed
+ 15:03 ShutdownGame:
+ 15:03 ------------------------------------------------------------
+ 15:03 ------------------------------------------------------------
+ 15:03 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 15:17 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 15:20 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 18:26 ShutdownGame:
+ 18:26 ------------------------------------------------------------
+ 18:26 ------------------------------------------------------------
+ 18:26 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 18:27 ExitLevel: executed
+ 18:28 ShutdownGame:
+ 18:28 ------------------------------------------------------------
+ 18:28 ------------------------------------------------------------
+ 18:28 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 18:36 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 18:39 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 30:43 ShutdownGame:
+ 30:43 ------------------------------------------------------------
+ 30:43 ------------------------------------------------------------
+ 30:43 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 30:44 ExitLevel: executed
+ 30:45 ShutdownGame:
+ 30:45 ------------------------------------------------------------
+ 30:45 ------------------------------------------------------------
+ 30:45 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 30:58 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 31:01 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 33:34 ShutdownGame:
+ 33:34 ------------------------------------------------------------
+ 33:34 ------------------------------------------------------------
+ 33:34 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 33:35 ExitLevel: executed
+ 33:36 ShutdownGame:
+ 33:36 ------------------------------------------------------------
+ 33:36 ------------------------------------------------------------
+ 33:36 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 33:39 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 33:44 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 33:47 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 36:47 ShutdownGame:
+ 36:47 ------------------------------------------------------------
+ 36:47 ------------------------------------------------------------
+ 36:47 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 36:48 ExitLevel: executed
+ 36:49 ShutdownGame:
+ 36:49 ------------------------------------------------------------
+ 36:49 ------------------------------------------------------------
+ 36:49 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 36:57 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 37:00 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 43:22 ShutdownGame:
+ 43:22 ------------------------------------------------------------
+ 43:22 ------------------------------------------------------------
+ 43:22 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 43:23 ExitLevel: executed
+ 43:24 ShutdownGame:
+ 43:24 ------------------------------------------------------------
+ 43:24 ------------------------------------------------------------
+ 43:24 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 43:34 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 43:37 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 44:57 ShutdownGame:
+ 44:57 ------------------------------------------------------------
+ 44:57 ------------------------------------------------------------
+ 44:57 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 44:57 ExitLevel: executed
+ 44:58 ShutdownGame:
+ 44:58 ------------------------------------------------------------
+ 44:58 ------------------------------------------------------------
+ 44:58 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 45:37 J;;6;bot5
+ 45:37 J;;5;bot4
+ 45:37 J;;4;bot3
+ 45:39 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 45:40 ShutdownGame:
+ 45:40 ------------------------------------------------------------
+ 45:40 ------------------------------------------------------------
+ 45:40 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 45:42 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 45:45 A: bot5 ; guid: 
+ 49:24 ShutdownGame:
+ 49:24 ------------------------------------------------------------
+ 49:24 ------------------------------------------------------------
+ 49:24 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 49:25 ExitLevel: executed
+ 49:26 ShutdownGame:
+ 49:26 ------------------------------------------------------------
+ 49:26 ------------------------------------------------------------
+ 49:26 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 49:35 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 49:38 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 59:40 ShutdownGame:
+ 59:40 ------------------------------------------------------------
+ 59:40 ------------------------------------------------------------
+ 59:40 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 59:41 ExitLevel: executed
+ 59:42 ShutdownGame:
+ 59:42 ------------------------------------------------------------
+ 59:42 ------------------------------------------------------------
+ 59:42 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 59:54 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 59:57 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 61:00 J;;9;bot8
+ 61:00 J;;8;bot7
+ 61:00 J;;7;bot6
+ 61:04 ShutdownGame:
+ 61:04 ------------------------------------------------------------
+ 61:04 ------------------------------------------------------------
+ 61:04 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 61:09 A: bot6 ; guid: 
+ 61:58 ShutdownGame:
+ 61:58 ------------------------------------------------------------
+ 61:58 ------------------------------------------------------------
+ 61:58 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^22^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 62:03 A: bot8 ; guid: 
+ 64:31 ShutdownGame:
+ 64:31 ------------------------------------------------------------
+ 64:31 ------------------------------------------------------------
+ 64:31 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^23^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 64:36 A: Modtest ; guid: ad2bbbd0ba69adabab164b82f6e389d4
+ 65:36 ShutdownGame:
+ 65:36 ------------------------------------------------------------
+ 65:36 ------------------------------------------------------------
+ 65:36 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^24^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 65:41 A: bot6 ; guid: 
+ 81:54 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Modtest
+ 88:42 ShutdownGame:
+ 88:42 ------------------------------------------------------------
+ 88:42 ------------------------------------------------------------
+ 88:42 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^25^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+ 88:47 A: bot8 ; guid: 
+148:57 ShutdownGame:
+148:57 ------------------------------------------------------------
+148:57 ------------------------------------------------------------
+148:57 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^26^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+149:02 A: bot7 ; guid: 
+182:28 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+182:34 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+209:12 ShutdownGame:
+209:12 ------------------------------------------------------------
+209:12 ------------------------------------------------------------
+209:12 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^27^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+209:17 A: bot6 ; guid: 
+269:27 ShutdownGame:
+269:27 ------------------------------------------------------------
+269:27 ------------------------------------------------------------
+269:27 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^28^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+269:32 A: bot7 ; guid: 
+329:41 ShutdownGame:
+329:41 ------------------------------------------------------------
+329:41 ------------------------------------------------------------
+329:41 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^29^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+329:47 A: bot6 ; guid: 
+334:05 ShutdownGame:
+334:05 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:02 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:13 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  7:34 ShutdownGame:
+  7:34 ------------------------------------------------------------
+  7:34 ------------------------------------------------------------
+  7:34 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  8:35 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  8:42 ShutdownGame:
+  8:42 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:36 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:23 ShutdownGame:
+  1:23 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\dm\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:46 ShutdownGame:
+  0:46 ------------------------------------------------------------
+  0:46 ------------------------------------------------------------
+  0:46 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\dm\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:04 ShutdownGame:
+  1:04 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:28 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:25 ShutdownGame:
+  2:25 ------------------------------------------------------------
+  2:25 ------------------------------------------------------------
+  2:25 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:26 ExitLevel: executed
+  2:28 ShutdownGame:
+  2:28 ------------------------------------------------------------
+  2:28 ------------------------------------------------------------
+  2:28 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:38 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:41 ShutdownGame:
+  2:41 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:08 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:21 ShutdownGame:
+  2:21 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:08 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:23 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:33 ShutdownGame:
+  2:33 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:09 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:16 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:42 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:46 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  7:47 ShutdownGame:
+  7:47 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:42 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  9:04 ShutdownGame:
+  9:04 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\1\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:18 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:32 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:45 ShutdownGame:
+  1:45 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:38 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:18 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:49 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:50 ShutdownGame:
+  1:50 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:17 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:31 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  5:20 ShutdownGame:
+  5:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:08 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  4:48 A: [oP] Bob ; guid: ad2bbbd0ba69adabab164b82f6e389d4
+ 10:26 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+ 83:20 ShutdownGame:
+ 83:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:21 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:23 ShutdownGame:
+  0:23 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:51 ShutdownGame:
+  0:51 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:54 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:39 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:43 ShutdownGame:
+  1:43 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:21 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  5:30 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  5:40 ShutdownGame:
+  5:40 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:57 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:05 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:13 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:43 ShutdownGame:
+  3:43 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:13 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:49 ShutdownGame:
+  1:49 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:48 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:17 ShutdownGame:
+  3:17 ------------------------------------------------------------
+  3:17 ------------------------------------------------------------
+  3:17 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  3:27 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:41 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  5:17 ShutdownGame:
+  5:17 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:16 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:11 ShutdownGame:
+  2:11 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:20 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  6:55 ShutdownGame:
+  6:55 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+ 92:31 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+214:11 ShutdownGame:
+214:11 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:15 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:06 ShutdownGame:
+  1:06 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:14 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:27 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:37 ShutdownGame:
+  2:37 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:38 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:43 ShutdownGame:
+  1:43 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:27 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:29 ShutdownGame:
+  1:29 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  6:09 ShutdownGame:
+  6:09 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:51 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:02 ShutdownGame:
+  3:02 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:12 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  4:56 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  7:26 ShutdownGame:
+  7:26 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:30 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  0:56 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:01 ShutdownGame:
+  1:01 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:15 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:56 ShutdownGame:
+  2:56 ------------------------------------------------------------
+  2:56 ------------------------------------------------------------
+  2:56 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  2:57 ExitLevel: executed
+  2:58 ShutdownGame:
+  2:58 ------------------------------------------------------------
+  2:58 ------------------------------------------------------------
+  2:58 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^1[^3oP^1] ^3Deathrun ^5Beta Mod ^7Rounds^1: ^21^7/10\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  3:24 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:27 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  5:22 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  6:24 ShutdownGame:
+  6:24 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:19 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  4:01 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+201:02 ShutdownGame:
+201:02 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  1:09 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:22 ShutdownGame:
+  3:22 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:59 ShutdownGame:
+  1:59 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:08 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  1:36 ShutdownGame:
+  1:36 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:14 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:25 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  2:51 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  3:30 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob;QUICKMESSAGE_SORRY
+  6:59 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  7:02 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  8:44 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  8:47 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  9:35 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  9:38 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  9:52 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+  9:55 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+ 10:52 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+ 10:55 J;ad2bbbd0ba69adabab164b82f6e389d4;0;[oP] Bob
+ 11:30 ShutdownGame:
+ 11:30 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:18 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:11 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_SUPPRESSING_FIRE
+ 13:58 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+ 85:01 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+ 86:39 ShutdownGame:
+ 86:39 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:09 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:14 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:00 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  2:32 ShutdownGame:
+  2:32 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:53 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  8:59 ShutdownGame:
+  8:59 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:13 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:34 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:37 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  4:39 ShutdownGame:
+  4:39 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:11 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:23 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:37 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  7:56 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_YES_SIR
+  7:59 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_MOVE_IN
+  8:01 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_AREA_SECURE
+ 19:47 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+ 19:51 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+ 22:17 ShutdownGame:
+ 22:17 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:20 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  2:39 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  7:38 ShutdownGame:
+  7:38 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:17 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:48 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:51 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:39 ShutdownGame:
+  1:39 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:48 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:21 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:24 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:39 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_YES_SIR
+  2:11 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_SORRY
+  5:21 ShutdownGame:
+  5:21 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:13 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  6:47 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  6:50 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  7:14 sayteam;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs;QUICKMESSAGE_SUPPRESSING_FIRE
+ 13:16 ShutdownGame:
+ 13:16 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:00 ShutdownGame:
+  0:00 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:13 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  0:54 Q;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:02 ShutdownGame:
+  1:02 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \fs_game\mods/deathrun_dev_12\g_compassShowEnemies\0\g_gametype\deathrun\gamename\Call of Duty 4\mapname\mp_killhouse\protocol\6\shortversion\1.7\sv_allowAnonymous\0\sv_disableClientConsole\0\sv_floodprotect\4\sv_hostname\^3Death Run ^21.1 ^7| www.braxi.cba.pl\sv_maxclients\32\sv_maxPing\500\sv_maxRate\25000\sv_minPing\0\sv_privateClients\0\sv_punkbuster\0\sv_pure\1\sv_voice\0\ui_maxclients\32
+  0:18 J;ad2bbbd0ba69adabab164b82f6e389d4;0;Nfs
+  1:54 ShutdownGame:
+  1:54 ------------------------------------------------------------

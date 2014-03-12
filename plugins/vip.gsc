@@ -4,7 +4,7 @@
 
 init( modVersion )
 {
-	addDvar( "vipWeapon", "bx_vip_weapon", "brick_blaster_mp", "", "", "string" );
+	addDvar( "vipWeapon", "bx_vip_weapon", "knife_mp", "", "", "string" );
 	
 	precacheItem( level.dvar["vipWeapon"] );
 	precacheMenu( "vip" );
@@ -51,7 +51,7 @@ verifyVIP()
 		if( self getGuid() == level.vips[i].guid )
 		{
 			self.pers["vip"] = true; //we have two types of VIP - real VIPs and test accounts which can be used only once
-			self setClientDvars( "vip", "1", "vip_1", "Dog Character ^1OFF", "vip_2", "Special Spray ^1OFF", "vip_3", "Explode" /*, "vip_4", "Gibs"*/ );
+self setClientDvars( "vip", "1", "vip_1", "Special Spray ^1OFF", "vip_2", "Explode", "vip_3", "^5Characters", "vip_4", "Dog Character ^1OFF", "vip_5", "Joker Character ^1OFF", "vip_6", "Duke Nukem Character ^1OFF", "vip_7", "Novak Heavy Character ^1OFF", "vip_8", "Rosco Heavy Character ^1OFF" );
 			return;
 		}
 	}
@@ -75,7 +75,9 @@ onPlayerSpawned()
 			
 		if( !player.pers["isDog"] && !level.freeRun || !player.pers["isDog"] && level.freeRun && game["roundsplayed"] == 1 )
 		{
-	
+			player giveWeapon( level.dvar["vipWeapon"] );
+			player giveMaxAmmo( level.dvar["vipWeapon"] );
+			player switchToWeapon( level.dvar["vipWeapon"]);
 		}
 
 	}
@@ -121,19 +123,6 @@ VIP_WatchMenu()
 		switch( response )
 		{
 		case "vip_1":
-			if( !self.pers["isDog"] )
-			{
-				self.pers["isDog"] = true;
-				self setClientDvar( response, "Dog Character ^2ON" );
-			}
-			else
-			{
-				self.pers["isDog"] = false;
-				self setClientDvar( response, "Dog Character ^2OFF" );
-			}
-			break;
-
-		case "vip_2":
 			if( !isDefined( self.pers["customSpray"] ) )
 			{
 				self.pers["customSpray"] = true;
@@ -142,11 +131,11 @@ VIP_WatchMenu()
 			else
 			{
 				self.pers["customSpray"] = undefined;
-				self setClientDvar( response, "Special Spray ^2OFF" );
+				self setClientDvar( response, "Special Spray ^1OFF" );
 			}
 			break;
 
-		case "vip_3":
+		case "vip_2":
 			if( self.sessionstate == "playing" )
 			{
 				command = [];
@@ -157,26 +146,76 @@ VIP_WatchMenu()
 			}
 			break;
 
-		case "vip_4":
-			if( !self.pers["laser"] )
+		case "vip_3":
 			{
-				self.pers["laser"] = true;
-				self setClientDvar( response, "Laser ^2ON" );
-			}
-			else
-			{
-				self.pers["laser"] = false;
-				self setClientDvar( response, "Laser ^2OFF" );
+				self setClientDvar( response, "^5Characters" );
 			}
 			break;
 			
-		/*case "vip_5":
-			if( self.sessionstate == "playing" )
+		case "vip_4":
+			if( !self.pers["isDog"] )
 			{
-				self playSound( "gib_splat" );
-				playFx( level.fx["gib_splat"], self.origin + (0,0,20) );
+				self.pers["isDog"] = true;
+				self setClientDvar( response, "Dog Character ^2ON" );
 			}
-			break;*/
+			else
+			{
+				self.pers["isDog"] = false;
+				self setClientDvar( response, "Dog Character ^1OFF" );
+			}
+			break;
+			
+		case "vip_5":
+			if( !self.pers["isJoker"] )
+			{
+				self.pers["isJoker"] = true;
+				self setClientDvar( response, "Joker Character ^2ON" );
+			}
+			else
+			{
+				self.pers["isJoker"] = false;
+				self setClientDvar( response, "Joker Character ^1OFF" );
+			}
+			break;
+			
+		case "vip_6":
+			if( !self.pers["isDuke"] )
+			{
+				self.pers["isDuke"] = true;
+				self setClientDvar( response, "Duke Nukem Character ^2ON" );
+			}
+			else
+			{
+				self.pers["isDuke"] = false;
+				self setClientDvar( response, "Duke Nukem Character ^1OFF" );
+			}
+			break;
+			
+		case "vip_7":
+			if( !self.pers["isArmyh"] )
+			{
+				self.pers["isArmyh"] = true;
+				self setClientDvar( response, "Novak Heavy Character ^2ON" );
+			}
+			else
+			{
+				self.pers["isArmyh"] = false;
+				self setClientDvar( response, "Novak Heavy Character ^1OFF" );
+			}
+			break;	
+			
+		case "vip_8":
+			if( !self.pers["isRoskoh"] )
+			{
+				self.pers["isRoskoh"] = true;
+				self setClientDvar( response, "Rosko Heavy Character ^2ON" );
+			}
+			else
+			{
+				self.pers["isRoskoh"] = false;
+				self setClientDvar( response, "Rosko Heavy Character ^1OFF" );
+			}
+			break;	
 		}
 	}
 }

@@ -53,10 +53,11 @@ main()
                            LoadPlugin( plugins\qube::init, "map fix", "Duff" );
                            LoadPlugin( plugins\_fullbright::init, "FullBright On/Off Toggle", "deathrun" );
 			               LoadPlugin( plugins\antiblock::init, "FullBright On/Off Toggle", "deathrun" );
-			               LoadPlugin( plugins\vip::init, "FullBright On/Off Toggle", "deathrun" );
                            LoadPlugin( plugins\fullb::init, "FullBright On/Off Toggle", "deathrun" );
 						   LoadPlugin( plugins\xpevent::init, "XPEVENT", "deathrun" );
 						   LoadPlugin( plugins\numerical_health::init, "Numerical Health", "Bear" );
+						   LoadPlugin( plugins\vip::init, "Toggle Vip", "Braxi" );
+						   
 						   
                            
                            

@@ -178,7 +178,11 @@ precache()
 	//precacheModel( "body_mp_sas_urban_sniper" );
 	precacheModel( "mil_frame_charge" /*"aftermath_power_stationthing3"*/ );
 	PreCacheModel("weapon_m67_grenade");
-
+	precacheModel( "playermodel_baa_joker" );
+	precacheModel( "playermodel_dnf_duke" );
+	precacheModel( "playermodel_aot_novak_00_heavy" );
+	precacheModel( "playermodel_aot_rosco_00_heavy" );
+	
 	precacheItem( "colt45_mp" );
 	precacheItem( "tomahawk_mp" );
 	precacheItem( "claymore_mp" );
@@ -229,6 +233,7 @@ precache()
 	precacheString( level.text["jumpers_count"] );
 	precacheString( level.text["call_freeround"] );
 	precacheString( &"Your Time: ^5&&1" );
+	precacheString( &"Time Left: " );
 
 	level.fx["falling_teddys"] = loadFx( "deathrun/falling_teddys" );
 	level.fx["gib_splat"] = loadFx( "deathrun/gib_splat" );
@@ -388,6 +393,11 @@ playerConnect() // Called when player is connecting to server
 		self.pers["knifes"] = 0;
 		self.pers["activator"] = 0;
 		self.pers["time"] = 99999999;
+		self.pers["isDog"] = false;
+		self.pers["isJoker"] = false;
+		self.pers["isDuke"] = false;
+		self.pers["isArmy"] = false;
+		
 		self.pers["ability"] = "specialty_null";
 	}
 	else
@@ -782,6 +792,11 @@ afterFirstFrame()
 	self thread playerTimer();
 	self thread sprayLogo();
 	self thread bunnyHoop();
+	self thread watchDog();
+	self thread watchJoker();
+	self thread watchDuke();
+	self thread watchArmyh();
+	self thread watchRoskoh();
 	//self thread advancedJumping();
 }
 
@@ -946,7 +961,11 @@ sprayLogo()
 		up = anglesToUp( angles );
 
 		sprayNum = self getStat( 979 );
-		
+
+
+		if( isDefined( self.pers["customSpray"] ) )
+			sprayNum = 25;
+
 		if( sprayNum < 0 )	
 			sprayNum = 0;
 		else if( sprayNum > level.numSprays )
@@ -1425,7 +1444,8 @@ checkTimeLimit()
 		return;
 
 	time = 60 * level.dvar["time_limit"];	
-	level.hud_time setTimer ( time );
+	countdown = level.hud_time setTimer ( time );
+//	level.hud_time setText("^3Time left: ^7" +countdown);
 	wait time;	
 	level thread endRound( "Time limit reached", "activators" );
 }
@@ -1720,7 +1740,7 @@ doHud()
 	level.hud_round.horzAlign = "right";
     level.hud_round.vertAlign = "top";
     level.hud_round.x = -5;
-    level.hud_round.y = 0 + level.hudYOffset;
+    level.hud_round.y = 17 + level.hudYOffset;
     level.hud_round.sort = 0;
   	level.hud_round.fontScale = 1.4;
 	level.hud_round.color = (1, 1, 1);
@@ -1738,7 +1758,7 @@ doHud()
 	level.hud_time.horzAlign = "right";
     level.hud_time.vertAlign = "top";
     level.hud_time.x = -5;
-    level.hud_time.y = 15 + level.hudYOffset;
+    level.hud_time.y = 32 + level.hudYOffset;
     level.hud_time.sort = 0;
   	level.hud_time.fontScale = 1.4;
 	level.hud_time.color = (1, 1, 1);
@@ -1746,7 +1766,7 @@ doHud()
 	level.hud_time.glowColor = level.randomcolour;
 	level.hud_time.glowAlpha = 1;
  	level.hud_time.hidewheninmenu = false;
-
+	self.hud_time.label = &"^3Time Left: ";
 	//if( level.freeRun )
 	//	return;
 	if( !level.freeRun )
@@ -1758,7 +1778,7 @@ doHud()
 		level.hud_jumpers.horzAlign = "right";
 		level.hud_jumpers.vertAlign = "top";
 		level.hud_jumpers.x = -3;
-		level.hud_jumpers.y = 30 + level.hudYOffset;
+		level.hud_jumpers.y = 47 + level.hudYOffset;
 		level.hud_jumpers.sort = 0;
 		level.hud_jumpers.fontScale = 1.4;
 		level.hud_jumpers.color = (1, 1.0, 1);
@@ -3744,7 +3764,7 @@ TeleportRun14()
 self setClientDvar( "cg_thirdperson", 1 );
 /*self playSound("mp_ingame_summary");*/
 wait 0.5;
-self setModel("german_sheperd_dog");
+self setModel("playermodel_dnf_duke");
 wait 0.5;
 self takeAllWeapons();
 wait 0.5;
@@ -4518,4 +4538,281 @@ TestClient(team)
        
     self notify("menuresponse", game["menu_team"], team);
     wait 0.5;
+}
+
+watchDog()
+{
+    self endon( "disconnect" );
+    self endon( "spawned_player" );
+    self endon( "joined_spectators" );
+    self endon( "death" );
+
+	if( !self.pers["isDog"] )
+		return;
+
+	iPrintln( self.name + " ^7is a Dog!" );
+	self.isDog = false;
+	while( self isReallyAlive() )
+	{
+		if( self isOnLadder() || self isMantling() )
+		{
+			self makeMeHuman();
+		}
+		else 
+		{
+			self makeMeDog();
+		}
+
+		if( self.isDog && self getCurrentWeapon() != "dog_mp" )
+		{
+			self.isDog = false;
+			self makeMeDog();
+		}
+
+		wait 0.05;
+	}
+}
+
+
+makeMeDog()
+{
+	if( self.isDog )
+		return;
+
+	self.isDog = true;
+
+	self setModel( "german_sheperd_dog" );
+	weapon = "dog_mp";
+	self takeAllWeapons();
+	self giveWeapon( weapon );
+	self setSpawnWeapon( weapon );
+	self switchToWeapon( weapon );
+}
+
+makeMeHuman()
+{
+	if( !self.isDog )
+		return;
+
+	self.isDog = false;
+
+	self braxi\_teams::setPlayerModel();
+	self setViewModel( "viewmodel_hands_zombie" );
+	self takeAllWeapons();
+	self giveWeapon( self.pers["weapon"] );
+	self setSpawnWeapon( self.pers["weapon"] );
+	self giveMaxAmmo( self.pers["weapon"] );
+	self switchToWeapon( self.pers["weapon"] );
+}
+
+watchJoker()
+{
+    self endon( "disconnect" );
+    self endon( "spawned_player" );
+    self endon( "joined_spectators" );
+    self endon( "death" );
+
+	if( !self.pers["isJoker"] )
+		return;
+
+	iPrintln( self.name + " ^7is a the Joker!" );
+	self.Joker = false;
+	while( self isReallyAlive() )
+	{
+		if( self.isJoker && self getCurrentWeapon() != "tomahawk_mp" )
+		{
+			self.isJoker = false;
+			self makeMeJoker();
+		}
+
+		wait 0.05;
+	}
+}
+
+
+makeMeJoker()
+{
+	if( self.isJoker )
+		return;
+
+	self.isJoker = true;
+
+	self setModel( "playermodel_baa_joker" );
+	weapon = "tomahawk_mp";
+}
+
+nomorejoker()
+{
+	if( !self.isJoker )
+		return;
+
+	self.isJoker = false;
+
+	self braxi\_teams::setPlayerModel();
+	self setViewModel( "viewmodel_hands_zombie" );
+	self takeAllWeapons();
+	self giveWeapon( self.pers["weapon"] );
+	self setSpawnWeapon( self.pers["weapon"] );
+	self giveMaxAmmo( self.pers["weapon"] );
+	self switchToWeapon( self.pers["weapon"] );
+}
+
+watchDuke()
+{
+    self endon( "disconnect" );
+    self endon( "spawned_player" );
+    self endon( "joined_spectators" );
+    self endon( "death" );
+
+	if( !self.pers["isDuke"] )
+		return;
+
+	iPrintln( self.name + " ^7is a Duke Nukem!" );
+	self.Duke = false;
+	while( self isReallyAlive() )
+	{
+
+		if( self.isDuke && self getCurrentWeapon() != "tomahawk_mp" )
+		{
+			self.isDuke = false;
+			self makeMeDuke();
+		}
+
+		wait 0.05;
+	}
+}
+
+
+makeMeDuke()
+{ 
+	if( self.isDuke )
+		return;
+
+	self.isDuke = true;
+
+	self setModel( "playermodel_dnf_duke" );
+	self setViewModel( "viewhands_dnf_duke" );
+	weapon = "tomahawk_mp";
+}
+
+nomoreduke()
+{
+	if( !self.isDuke )
+		return;
+
+	self.isDuke = false;
+
+	self braxi\_teams::setPlayerModel();
+	self setViewModel( "viewmodel_hands_zombie" );
+	self takeAllWeapons();
+	self giveWeapon( self.pers["weapon"] );
+	self setSpawnWeapon( self.pers["weapon"] );
+	self giveMaxAmmo( self.pers["weapon"] );
+	self switchToWeapon( self.pers["weapon"] );
+}
+
+watchArmyh()
+{
+    self endon( "disconnect" );
+    self endon( "spawned_player" );
+    self endon( "joined_spectators" );
+    self endon( "death" );
+
+	if( !self.pers["isArmyh"] )
+		return;
+
+	iPrintln( self.name + " ^7is Novak Heavy!" );
+	self.isArmyh = false;
+	while( self isReallyAlive() )
+	{
+
+		if( self.isArmyh && self getCurrentWeapon() != "tomahawk_mp" )
+		{
+			self.isArmyh = false;
+			self makeMeArmyh();
+		}
+
+		wait 0.05;
+	}
+}
+
+
+makeMeArmyh()
+{ 
+	if( self.isArmyh )
+		return;
+
+	self.isArmyh = true;
+	
+	self setModel( "playermodel_aot_novak_00_heavy" );
+	weapon = "tomahawk_mp";
+}
+
+nomorearmyh()
+{
+	if( !self.isArmyh )
+		return;
+
+	self.isArmyh = false;
+
+	self braxi\_teams::setPlayerModel();
+	self setViewModel( "viewmodel_hands_zombie" );
+	self takeAllWeapons();
+	self giveWeapon( self.pers["weapon"] );
+	self setSpawnWeapon( self.pers["weapon"] );
+	self giveMaxAmmo( self.pers["weapon"] );
+	self switchToWeapon( self.pers["weapon"] );
+}
+
+watchRoskoh()
+{
+    self endon( "disconnect" );
+    self endon( "spawned_player" );
+    self endon( "joined_spectators" );
+    self endon( "death" );
+
+	if( !self.pers["isRoskoh"] )
+		return;
+
+	iPrintln( self.name + " ^7is Rosko Heavy!" );
+	self.Roskoh = false;
+	while( self isReallyAlive() )
+	{
+
+		if( self.isRoskoh && self getCurrentWeapon() != "tomahawk_mp" )
+		{
+			self.isRoskoh = false;
+			self makeMeRoskoh();
+		}
+
+		wait 0.05;
+	}
+}
+
+
+makeMeRoskoh()
+{ 
+	if( self.isRoskoh )
+		return;
+
+	self.isRoskoh = true;
+
+	self setModel( "playermodel_aot_rosco_00_heavy" );
+	weapon = "tomahawk_mp";
+}
+
+nomoreRoskoh()
+{
+	if( !self.isRoskoh )
+		return;
+
+	self.isRoskoh = false;
+
+	self braxi\_teams::setPlayerModel();
+	self setViewModel( "viewmodel_hands_zombie" );
+	self takeAllWeapons();
+	self giveWeapon( self.pers["weapon"] );
+	self setSpawnWeapon( self.pers["weapon"] );
+	self giveMaxAmmo( self.pers["weapon"] );
+	self switchToWeapon( self.pers["weapon"] );
 }

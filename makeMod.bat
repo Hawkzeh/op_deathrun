@@ -26,7 +26,7 @@ copy /Y mod.csv ..\..\zone_source
 
 cd ..\..\bin
 linker_pc.exe -language english -compress -cleanup mod
-cd ..\mods\deathrun
+cd ..\mods\deathrun_dev_12
 copy ..\..\zone\english\mod.ff
 
 pause

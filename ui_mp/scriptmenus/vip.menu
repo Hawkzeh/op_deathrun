@@ -72,13 +72,19 @@
 		}
 
 
-		DR_BUTTON( "0", 100, 110, 180, 20, dvarString( "vip_1" ), scriptMenuResponse "vip_1";, when(dvarString( "vip_1" ) != "") )
-		DR_BUTTON( "1", 100, 135, 180, 20, dvarString( "vip_2" ), scriptMenuResponse "vip_2";, when(dvarString( "vip_2" ) != "") )
-		DR_BUTTON( "2", 100, 160, 180, 20, dvarString( "vip_3" ), scriptMenuResponse "vip_3";, when(dvarString( "vip_3" ) != "") )
-		DR_BUTTON( "4", 100, 185, 180, 20, dvarString( "vip_4" ), scriptMenuResponse "vip_4";, when(dvarString( "vip_4" ) != "") )
-		DR_BUTTON( "5", 100, 210, 180, 20, dvarString( "vip_5" ), scriptMenuResponse "vip_5";, when(dvarString( "vip_5" ) != "") )
-		DR_BUTTON( "6", 100, 235, 180, 20, dvarString( "vip_6" ), scriptMenuResponse "vip_6";, when(dvarString( "vip_6" ) != "") )
-
+		DR_BUTTON( "0", 143, 100, 175, 20, dvarString( "vip_1" ), scriptMenuResponse "vip_1";, when(dvarString( "vip_1" ) != "") )
+		DR_BUTTON( "1", 143, 125, 175, 20, dvarString( "vip_2" ), scriptMenuResponse "vip_2";, when(dvarString( "vip_2" ) != "") )
+		DR_BUTTON( "2", 143, 150, 175, 20, dvarString( "vip_3" ), scriptMenuResponse "vip_3";, when(dvarString( "vip_3" ) != "") )
+		DR_BUTTON( "4", 143, 175, 175, 20, dvarString( "vip_4" ), scriptMenuResponse "vip_4";, when(dvarString( "vip_4" ) != "") )
+		DR_BUTTON( "5", 143, 200, 175, 20, dvarString( "vip_5" ), scriptMenuResponse "vip_5";, when(dvarString( "vip_5" ) != "") )
+		DR_BUTTON( "6", 143, 225, 175, 20, dvarString( "vip_6" ), scriptMenuResponse "vip_6";, when(dvarString( "vip_6" ) != "") )
+		DR_BUTTON( "7", 143, 250, 175, 20, dvarString( "vip_7" ), scriptMenuResponse "vip_7";, when(dvarString( "vip_7" ) != "") )
+		DR_BUTTON( "8", 143, 275, 175, 20, dvarString( "vip_8" ), scriptMenuResponse "vip_8";, when(dvarString( "vip_8" ) != "") )
+		DR_BUTTON( "9", 143, 300, 175, 20, dvarString( "vip_9" ), scriptMenuResponse "vip_9";, when(dvarString( "vip_9" ) != "") )
+		DR_BUTTON( "10", 143, 325, 175, 20, dvarString( "vip_10" ), scriptMenuResponse "vip_10";, when(dvarString( "vip_10" ) != "") )
+		DR_BUTTON( "11", 143, 350, 175, 20, dvarString( "vip_11" ), scriptMenuResponse "vip_11";, when(dvarString( "vip_11" ) != "") )
+		DR_BUTTON( "12", 143, 375, 175, 20, dvarString( "vip_12" ), scriptMenuResponse "vip_12";, when(dvarString( "vip_12" ) != "") )
+		
 		itemDef
 		{
 			name			"motd"

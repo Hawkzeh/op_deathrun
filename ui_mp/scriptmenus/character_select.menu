@@ -120,7 +120,7 @@
 	}
 }
 
-	// sharacter selection
+	// character selection
 	menuDef	
 	{
 		IMPROVED_POPUP_SETUP_ONOPEN( "popup_stuff1", 5, (CHOICE_X( 4 )-2), (CHOICE_Y( 4 )+18), ;, execnow "set "UI_FOCUSFIRST" "REF_C4_X2"; set ui_inside_popup character";, 1 )
