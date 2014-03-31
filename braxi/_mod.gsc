@@ -200,8 +200,13 @@ precache()
 	precacheitem("usp_mp");
 	precacheitem("winchester1200_mp");
 	precacheitem("g36c_reflex_mp");
-
+	precacheitem("tom_axe_mp");
+	precacheitem("tom_katana_mp");
+	precacheitem("barrett_acog_mp");
+	
 	precacheMenu( "clientcmd" );
+	precacheMenu( "musicmenu" );
+	precacheMenu( "musicmenu1" );
 	
 	precacheShader( "black" );
 	precacheShader( "white" );
@@ -354,7 +359,8 @@ buildItemInfo()
 playerConnect() // Called when player is connecting to server
 {
 	level notify( "connected", self );
-
+	
+//	self thread MusicMenu();
 	self thread cleanUp();
 	self.guid = self getGuid();
 	self.number = self getEntityNumber();
@@ -394,10 +400,10 @@ playerConnect() // Called when player is connecting to server
 		self.pers["activator"] = 0;
 		self.pers["time"] = 99999999;
 		self.pers["isDog"] = false;
+		self.pers["randomer"] = false;
 		self.pers["isJoker"] = false;
 		self.pers["isDuke"] = false;
 		self.pers["isArmy"] = false;
-		
 		self.pers["ability"] = "specialty_null";
 	}
 	else
@@ -620,7 +626,7 @@ spawnPlayer( origin, angles )
 	self.archivetime = 0;
 	self.psoffsettime = 0;
 	self.statusicon = "";
-
+	
 	self braxi\_teams::setPlayerModel();
 	//self setModel( "body_alice" );
 
@@ -797,7 +803,9 @@ afterFirstFrame()
 	self thread watchDuke();
 	self thread watchArmyh();
 	self thread watchRoskoh();
+	self thread watchrandomer();
 	//self thread advancedJumping();
+	//Music
 }
 
 bunnyHoop()
@@ -1027,6 +1035,7 @@ endRound( reasonText, team )
 		if( level.dvar["roundSound"] )
 		{
 			ambientStop(0);
+			self musicstop();
 			song = (1+randomInt(10));
 			level thread playSoundOnAllPlayers( "end_round_" + song );
 			level.nphud setText( "^3Now playing: ^7" + getDvar( "dr_song_" + song ) );
@@ -1203,14 +1212,11 @@ gameLogic()
 	level endon( "endround" );
 	level endon( "kill logic" );
 	waittillframeend;
-
+	
+	ambientStop(0);
+	
 	level.allowSpawn = true;
 	warning = false;
-
-	maptrax = (1+randomInt(20));
-	ambientPlay( "maptrax_" + maptrax );
-	level thread nphud();
-	level.nphud setText( "^3Now playing: ^7" + getDvar( "maptrax_" + maptrax ) );
 	
 	visionSetNaked( "mpIntro", 0 );
 	if( isDefined( level.matchStartText ) )
@@ -4595,6 +4601,7 @@ makeMeHuman()
 		return;
 
 	self.isDog = false;
+	
 
 	self braxi\_teams::setPlayerModel();
 	self setViewModel( "viewmodel_hands_zombie" );
@@ -4744,7 +4751,7 @@ makeMeArmyh()
 
 	self.isArmyh = true;
 	
-	self setModel( "playermodel_aot_novak_00_heavy" );
+	//self setModel( "playermodel_aot_novak_00_heavy" );
 	weapon = "tomahawk_mp";
 }
 
@@ -4797,7 +4804,7 @@ makeMeRoskoh()
 
 	self.isRoskoh = true;
 
-	self setModel( "playermodel_aot_rosco_00_heavy" );
+	//self setModel( "playermodel_aot_rosco_00_heavy" );
 	weapon = "tomahawk_mp";
 }
 
@@ -4815,4 +4822,92 @@ nomoreRoskoh()
 	self setSpawnWeapon( self.pers["weapon"] );
 	self giveMaxAmmo( self.pers["weapon"] );
 	self switchToWeapon( self.pers["weapon"] );
+}
+
+watchrandomer()
+{
+    self endon( "disconnect" );
+
+	if( !self.pers["randomer"] )
+		return;
+
+	self.randomer = false;
+		{
+			self.randomer = false;
+			self playrandomer();
+		}
+}
+
+
+
+playrandomer()
+{ 
+	if( self.randomer )
+		return;
+
+	iPrintln( self.name + " Playing MUSIC" );
+	self.randomer = true;
+	self random();
+}
+
+stoprandomer()
+{
+	if( !self.randomer )
+		return;
+
+	self.randomer = false;
+	self localmusicstop();
+}
+
+musicstop()
+{
+	level.player StopLocalSound( "maptrax_1" );
+	level.player StopLocalSound( "maptrax_2" );
+	level.player StopLocalSound( "maptrax_3" );
+	level.player StopLocalSound( "maptrax_4" );
+	level.player StopLocalSound( "maptrax_5" );
+	level.player StopLocalSound( "maptrax_6" );
+	level.player StopLocalSound( "maptrax_7" );
+	level.player StopLocalSound( "maptrax_8" );
+	level.player StopLocalSound( "maptrax_9" );
+	level.player StopLocalSound( "maptrax_10" );
+	level.player StopLocalSound( "maptrax_11" );
+	level.player StopLocalSound( "maptrax_12" );
+	level.player StopLocalSound( "maptrax_13" );
+	level.player StopLocalSound( "maptrax_14" );
+	level.player StopLocalSound( "maptrax_15" );
+	level.player StopLocalSound( "maptrax_16" );
+	level.player StopLocalSound( "maptrax_17" );
+	level.player StopLocalSound( "maptrax_18" );
+	level.player StopLocalSound( "maptrax_19" );
+	level.player StopLocalSound( "maptrax_20" );
+}
+
+random()
+{
+				maptrax = (1+randomInt(20));
+				self playLocalSound( "maptrax_" + maptrax );
+}
+
+localmusicstop()
+{				self stopLocalSound( "maptrax_1" );
+				self stopLocalSound( "maptrax_2" );
+				self stopLocalSound( "maptrax_3" );
+				self stopLocalSound( "maptrax_4" );
+				self stopLocalSound( "maptrax_5" );
+				self stopLocalSound( "maptrax_6" );
+				self stopLocalSound( "maptrax_7" );
+				self stopLocalSound( "maptrax_8" );
+				self stopLocalSound( "maptrax_9" );
+				self stopLocalSound( "maptrax_10" );
+				self stopLocalSound( "maptrax_11" );
+				self stopLocalSound( "maptrax_12" );
+				self stopLocalSound( "maptrax_13" );
+				self stopLocalSound( "maptrax_14" );
+				self stopLocalSound( "maptrax_15" );
+				self stopLocalSound( "maptrax_16" );
+				self stopLocalSound( "maptrax_17" );
+				self stopLocalSound( "maptrax_18" );
+				self stopLocalSound( "maptrax_19" );
+				self stopLocalSound( "maptrax_20" );
 }

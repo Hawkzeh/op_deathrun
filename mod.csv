@@ -30,11 +30,11 @@
 //rawfile,braxi/_teams.gsc
 //rawfile,plugins/_plugins.gsc
 
-//rawfile,maps/mp/gametypes/_callbacksetup.gsc
-//rawfile,maps/mp/gametypes/_gametypes.txt
-//rawfile,maps/mp/gametypes/_persistence.gsc
-//rawfile,maps/mp/gametypes/_hud_util.gsc
-//rawfile,maps/mp/gametypes/deathrun.gsc
+rawfile,maps/mp/gametypes/_callbacksetup.gsc
+rawfile,maps/mp/gametypes/_gametypes.txt
+rawfile,maps/mp/gametypes/_persistence.gsc
+rawfile,maps/mp/gametypes/_hud_util.gsc
+rawfile,maps/mp/gametypes/deathrun.gsc
 rawfile,maps/mp/gametypes/deathrun.txt
 rawfile,cleanup.cfg
 rawfile,DeathRun_ReadMe.txt
@@ -292,6 +292,9 @@ menufile,ui_mp/scriptmenus/character_stuff.menu
 menufile,ui_mp/scriptmenus/clientcmd.menu
 menufile,ui_mp/challenges.menu
 menufile,ui_mp/controls_multi.menu
+menufile,ui_mp/scriptmenus/musicmenu.menu
+menufile,ui_mp/scriptmenus/musicmenup.menu
+menufile,ui_mp/scriptmenus/musicoptions.menu
 
 // Sound aliases & sound files
 rawfile,sound/misc/ee1.wav
@@ -477,6 +480,39 @@ xmodel,viewmodel_bo_crossbow
 xmodel,worldmodel_bo_crossbow
 xmodel,projectile_bo_arrow_explosive
 
+//Tom Weapons
+xmodel,tom_axe_model
+xmodel,tom_axe_model_world
+xmodel,tom_katana_model
+xmodel,tom_katana_model_world
+//xmodel,tom_shovel_model
+//xmodel,tom_shovel_model_world
+
+//xanim,tom_shovel_pullout
+//xanim,tom_shovel_idle
+//xanim,tom_shovel_fire
+//xanim,tom_shovel_drop
+//xanim,tom_shovel_idle
+xanim,tom_katana_pullout
+xanim,tom_katana_idle
+xanim,tom_katana_fire
+xanim,tom_katana_drop
+xanim,tom_katana_idle
+xanim,tom_axe_pullout
+xanim,tom_axe_idle
+xanim,tom_axe_fire
+xanim,tom_axe_drop
+xanim,tom_axe_drop_long
+xanim,tom_axe_ADS_up
+xanim,tom_axe_ADS_idle
+
+
+//material,tom_katana_tex
+//material,tom_axe_tex
+//weapon,mp/tom_shovel_mp
+weapon,mp/tom_katana_mp
+weapon,mp/tom_axe_mp
+
 // Taurus 850
 xmodel,kc_weapon_t850
 xmodel,kc_weapon_t850_w
@@ -523,60 +559,25 @@ material,mtl_plr_baa_joker_hair
 material,mtl_plr_baa_joker_head
 
 # <------------------------------------------------------------------> #
-# Army of Two CHARACTERS
+# RAY GUN
 # <------------------------------------------------------------------> #
+xmodel,raygun_viewmodel
+xmodel,weapon_raygun
+material,mtl_ray_gun
+material,mtl_ray_gun_battery
+material,mtl_red_dot
+xanim,viewmodel_ray_gun_idle
+xanim,viewmodel_ray_gun_fire
+xanim,viewmodel_ray_gun_reload
+xanim,viewmodel_ray_gun_raise
+xanim,viewmodel_ray_gun_drop
+xanim,viewmodel_ray_gun_ADS_up
+xanim,viewmodel_ray_gun_ADS_down
+fx,raygun\raygun_trail
+fx,raygun\raygun_muzzle
+fx,raygun\raygun_impact
 
-
-# <--------COMMON-----------> #
-material,mtl_aot_buttpack
-material,mtl_aot_crounch
-material,mtl_aot_heavy_chin_armor
-material,mtl_aot_heavy_leg_armor
-material,mtl_aot_heavy_shoulder_pad
-material,mtl_aot_super_shoulder
-
-
-# <--------SALEM-----------> #
-
-# Materials
-material,mtl_aot_rosco_body_93
-material,mtl_aot_rosco_head_93
-
-material,mtl_aot_rosco_body_00
-material,mtl_aot_rosco_head_00
-material,mtl_aot_rosco_hair
-material,mtl_aot_rosco_mask
-material,mtl_aot_rosco_shoulder
-material,mtl_aot_rosco_thigh
-material,mtl_aot_rosco_tibia
-material,mtl_aot_3rd_armor_rosco
-
-# Models
-xmodel,playermodel_aot_rosco_93
-xmodel,playermodel_aot_rosco_00_light
-xmodel,playermodel_aot_rosco_00_med
-xmodel,playermodel_aot_rosco_00_heavy
-
-
-# <--------RIOS-----------> #
-
-# Materials
-material,mtl_aot_novak_body_93
-material,mtl_aot_novak_head_93
-
-material,mtl_aot_novak_body_00
-material,mtl_aot_novak_head_00
-material,mtl_aot_novak_mask
-material,mtl_aot_novak_shoulder
-material,mtl_aot_novak_thigh
-material,mtl_aot_rosco_tibia
-material,mtl_aot_3rd_armor_novak
-
-# Models
-xmodel,playermodel_aot_novak_93
-xmodel,playermodel_aot_novak_00_light
-xmodel,playermodel_aot_novak_00_med
-xmodel,playermodel_aot_novak_00_heavy
+sound,raygun,,all_mp
 
 
 # <------------------------------------------------------------------> #

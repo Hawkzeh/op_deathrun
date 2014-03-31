@@ -1,0 +1,114 @@
+#include "ui/menudef.h"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+
+#include "ui_mp/dr_common.inc"
+{
+    menuDef // Starting menu, you can put menu's inside menus!
+    {
+        name                        "musicmenu"  // menu name, always need this for new menu's
+		rect                        0 0 640 480 //always have this as 640 x 480, pretty much the size of menu //
+		focuscolor                COLOR_FOCUSED // Menu focus colour for text and items etc...
+		blurWorld                7.0 //background blur
+		style                        WINDOW_STYLE_EMPTY
+		legacySplitScreenScale
+		onEsc
+		{
+			close self; // What happens you press ESCAPE
+		}
+		onOpen // when happens when you open menu
+		{
+			//focusFirst;
+			//setfocus "auto_assign";
+		}
+		onClose // what happens when you're closing menu. 
+		{
+		
+		
+		}
+		
+		#include "ui_mp/dr_menu_frame.inc"
+		
+// background overlay
+		itemDef        
+		{
+		style                        WINDOW_STYLE_FILLED
+		rect                        0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN 
+		backcolor					0 0 0 .5 
+		visible						1
+		decoration
+		}
+		//  top background
+		itemDef       
+		{
+			style                        WINDOW_STYLE_SHADER
+			rect                        0 0 854 45 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background                "black"
+			visible                        1
+			decoration
+		}
+				
+		itemDef       
+		{
+			style                        WINDOW_STYLE_FILLED
+			rect                        0 45 854 30 HORIZONTAL_ALIGN_FULLSCREEN 0
+			backcolor					0 0 0 .4 
+			visible                        1
+			decoration
+		}
+				
+		// bottom background
+		itemDef       
+		{
+			style                        WINDOW_STYLE_FILLED
+			rect                        0 405 854 30 HORIZONTAL_ALIGN_FULLSCREEN 0
+			backcolor					0 0 0 .4
+			visible                        1
+			decoration
+		}
+
+		itemDef 
+		{
+			// 570 - 330 = 240
+			rect			330 100 220 180
+			style			WINDOW_STYLE_SHADER
+			exp				material( "$levelBriefing" )
+			border			2
+			bordercolor		.4 .4 .4 .8
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+
+		DR_BUTTON( "0", 143, 100, 175, 20, dvarString( "musicmenu_1" ), scriptMenuResponse "musicmenu_1";, when(dvarString( "musicmenu_1" ) != "") )
+		DR_BUTTON( "1", 143, 125, 175, 20, dvarString( "musicmenu_2" ), scriptMenuResponse "musicmenu_2";, when(dvarString( "musicmenu_2" ) != "") )
+		DR_BUTTON( "2", 143, 150, 175, 20, dvarString( "musicmenu_3" ), scriptMenuResponse "musicmenu_3";, when(dvarString( "musicmenu_3" ) != "") )
+		DR_BUTTON( "4", 143, 175, 175, 20, dvarString( "musicmenu_4" ), scriptMenuResponse "musicmenu_4";, when(dvarString( "musicmenu_4" ) != "") )
+		DR_BUTTON( "5", 143, 200, 175, 20, dvarString( "musicmenu_5" ), scriptMenuResponse "musicmenu_5";, when(dvarString( "musicmenu_5" ) != "") )
+		DR_BUTTON( "6", 143, 225, 175, 20, dvarString( "musicmenu_6" ), scriptMenuResponse "musicmenu_6";, when(dvarString( "musicmenu_6" ) != "") )
+		DR_BUTTON( "7", 143, 250, 175, 20, "Music Options", close self; open "musicoptions";, 1 )
+		DR_BUTTON( "8", 143, 280, 175, 20, "Next Page", close self; open "musicmenup";, 1 )
+		
+		itemDef
+		{
+			name			"motd"
+			visible			1
+			rect			80 320 470 140
+			forecolor		1 1 1 1
+			autowrapped
+			exp				text( dvarString("dr_motd") )
+			textfont		UI_FONT_OBJECTIVE
+			textscale		.32
+			textalignx		8
+			textaligny		16
+			textalign		ITEM_ALIGN_CENTER
+			decoration
+		}
+	}
+}
+
+
+	
