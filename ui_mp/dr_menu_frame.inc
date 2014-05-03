@@ -3,7 +3,7 @@
 		// background
 		itemDef 
 		{
-			rect			80 30 480 420
+			rect			80 30 540 420
 			style			WINDOW_STYLE_FILLED
 			border			1
 			bordercolor		.6 .6 .6 .55
@@ -17,9 +17,11 @@
 		// header
 		itemDef 
 		{
-			rect			80 30 480 60
+			rect			22 30 60 420 //x, y ,size x, size y
 			style			WINDOW_STYLE_SHADER
 			background		"uidr_header"
+			border			1
+			bordercolor		.6 .6 .6 .55
 			visible			1
 			decoration
 		}
@@ -40,7 +42,7 @@
 		itemDef
 		{
 			visible			1 //when( !menuisopen( "team_select" ) )
-			origin			510 68
+			origin			550 68
 			forecolor		1 1 1 1
 			exp				text( dvarString( "name" ) )
 			textfont		UI_FONT_NORMAL
@@ -65,7 +67,7 @@
 		// rank icon
 		itemDef 
 		{
-			rect			/*528 44*/ 518 37 32 32
+			rect			/*528 44*/ 568 37 32 32
 			style			WINDOW_STYLE_SHADER
 			exp				material( tablelookup( "mp/rankIconTable.csv", 0, stat(252), stat(2326)+1 ) )
 			//background		"uidr_header"
@@ -77,7 +79,7 @@
 		itemDef
 		{
 			visible			1
-			origin			550 82
+			origin			600 82
 			forecolor		0.95 0.95 0.95 1
 			exp				text( "@"+tablelookup("mp/ranktable.csv",0,stat(252)+1,5) )
 			textfont		UI_FONT_NORMAL
@@ -90,12 +92,12 @@
 		itemDef
 		{
 			visible			1
-			origin			550 445
+			origin			616 449
 			forecolor		1 1 1 1
-			text			"Death Run Mod 1.2 by BraXi"
+			text			"Deathrun by Braxi with a twist of happiness."
 			textfont		UI_FONT_NORMAL
 			textalign		ITEM_ALIGN_RIGHT
-			textscale		0.3
+			textscale		0.2
 			decoration
 		}
 

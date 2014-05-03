@@ -92,6 +92,7 @@ main()
 	buildSprayInfo();
 	buildCharacterInfo();
 	buildItemInfo();
+	buildactiItemInfo();
 	buildAbilityInfo();
 	bestMapScores();
 
@@ -137,7 +138,7 @@ main()
 	thread jetpack_up();
 	thread invisible();
 	thread giverpg();
-	thread givetomahawk();
+	//thread givetomahawk();
 	thread giveminigun();
 	thread allow_pickup();
 	/*thread printCredits();*/
@@ -202,7 +203,6 @@ precache()
 	precacheitem("g36c_reflex_mp");
 	precacheitem("tom_axe_mp");
 	precacheitem("tom_katana_mp");
-	precacheitem("barrett_acog_mp");
 	
 	precacheMenu( "clientcmd" );
 	precacheMenu( "musicmenu" );
@@ -240,12 +240,19 @@ precache()
 	precacheString( &"Your Time: ^5&&1" );
 	precacheString( &"Time Left: " );
 
+	//Fx load
+	
 	level.fx["falling_teddys"] = loadFx( "deathrun/falling_teddys" );
 	level.fx["gib_splat"] = loadFx( "deathrun/gib_splat" );
 	level.fx["light_blink"] = loadFx( "misc/light_c4_blink" );
 	level.explodefx = loadfx( "explosions/aerial_explosion" );
 	level._effect["iPRO"] = loadfx("explosions/grenadeExp_water");
 	level.chopper_fx["explode"]["medium"] = loadfx ("explosions/aerial_explosion");
+	level.dist = loadfx( "fire/tank_fire_engine" );
+	level.ted = loadfx( "deathrun/falling_teddys" );
+	level.spray = loadfx( "deathrun/spray0" );
+	level.fx_endgame = LoadFX( "deathrun/endgame_fx" );
+	level.fx_bloodpool = LoadFX( "deathrun/bloodpool" );
 }
 
 init_spawns()
@@ -356,6 +363,30 @@ buildItemInfo()
 	}
 }
 
+buildactiItemInfo()
+{
+	level.actiitemInfo = [];
+	level.numactiItems = 0;
+	
+	tableName = "mp/actiitemTable.csv";
+
+	for( idx = 1; isdefined( tableLookup( tableName, 0, idx, 0 ) ) && tableLookup( tableName, 0, idx, 0 ) != ""; idx++ )
+	{
+		id = int( tableLookup( tableName, 0, idx, 1 ) );
+		level.actiitemInfo[id]["rank"] = (int(tableLookup( tableName, 0, idx, 2 )) - 1);
+		level.actiitemInfo[id]["shader"] = tableLookup( tableName, 0, idx, 3 );
+		level.actiitemInfo[id]["actiitem"] = (tableLookup( tableName, 0, idx, 4 ) + "_mp");
+		level.actiitemInfo[id]["name"] = tableLookup( tableName, 0, idx, 5 );
+		level.actiitemInfo[id]["desc"] = tableLookup( tableName, 0, idx, 6 );
+		
+		precacheShader( level.actiitemInfo[id]["shader"] );
+		precacheItem( level.actiitemInfo[id]["actiitem"] );
+		//precacheString( level.actiitemInfo[id]["name"] );
+		//precacheString( level.actiitemInfo[id].desc );
+		level.numactiItems++;
+	}
+}
+
 playerConnect() // Called when player is connecting to server
 {
 	level notify( "connected", self );
@@ -404,6 +435,7 @@ playerConnect() // Called when player is connecting to server
 		self.pers["isJoker"] = false;
 		self.pers["isDuke"] = false;
 		self.pers["isArmy"] = false;
+		self.pers["actiweap"] = false;
 		self.pers["ability"] = "specialty_null";
 	}
 	else
@@ -608,6 +640,16 @@ PlayerKilled(eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLo
 
 }
 
+delayBloodPool()
+{
+	if( !level.dvar["extrablood"] )
+		return;
+
+	wait 2;
+	if( isDefined( self ) )
+		PlayFX( level.fx_bloodpool, self.origin );
+}
+
 spawnPlayer( origin, angles )
 {
 //	self endon( "disconnect" );
@@ -646,15 +688,12 @@ spawnPlayer( origin, angles )
 		else
 			self.pers["weapon"] = level.itemInfo[self getStat(981)]["item"];
 
-		/*if( self.pers["weapon"] == "usp_mp" )
-			self setClientDvar( "cg_laserForceOn", 1 );
-		else
-			self setClientDvar( "cg_laserForceOn", 0 );*/
-
 	}
+	self SetActionSlot( 1, "nightvision" );
 	if( level.trapsDisabled || self.pers["team"] == "axis" )
 	{
-		self.pers["weapon"] = "tomahawk_mp";
+	self.pers["weapon"] = level.actiitemInfo[self getStat(983)]["actiitem"];
+		//self.pers["weapon"] = "tomahawk_mp";
 	}
 
 	self giveWeapon( self.pers["weapon"] );
@@ -804,6 +843,7 @@ afterFirstFrame()
 	self thread watchArmyh();
 	self thread watchRoskoh();
 	self thread watchrandomer();
+	self thread watchactiweap();
 	//self thread advancedJumping();
 	//Music
 }
@@ -972,7 +1012,7 @@ sprayLogo()
 
 
 		if( isDefined( self.pers["customSpray"] ) )
-			sprayNum = 25;
+			sprayNum = (1+randomInt(25));
 
 		if( sprayNum < 0 )	
 			sprayNum = 0;
@@ -1214,6 +1254,16 @@ gameLogic()
 	waittillframeend;
 	
 	ambientStop(0);
+	
+	level thread nphud();
+	ambientStop(0);
+	song = (1+randomInt(18));
+    prevsong = song;
+    while(song == prevsong)
+        song = (1+randomInt(18));
+    prevsong = song;
+	ambientPlay( "maptrax_" + song );
+	level.nphud setText( "^3Now playing: ^7" + getDvar( "map_trax_" + song ) );
 	
 	level.allowSpawn = true;
 	warning = false;
@@ -1484,7 +1534,7 @@ endMap( winningteam )
 	
 	
 	//thread saveMapScores();
-
+	ambientStop(0);
 	level thread playSoundOnAllPlayers( "end_map" );
 
 	players = getAllPlayers();
@@ -1522,10 +1572,12 @@ endMap( winningteam )
 
 	wait 0.5;
 
-	teddysOrigin = level.spawn["spectator"].origin + vector_scale( anglesToForward( level.spawn["spectator"].angles ), 120 ) + vector_scale( anglesToUp( level.spawn["spectator"].angles ), 180 );
+	/*teddysOrigin = level.spawn["spectator"].origin + vector_scale( anglesToForward( level.spawn["spectator"].angles ), 120 ) + vector_scale( anglesToUp( level.spawn["spectator"].angles ), 180 );
 	playFx( level.fx["falling_teddys"], teddysOrigin );
-	playFx( level.fx["falling_teddys"], level.spawn["spectator"].origin + (0,0,100) );
-
+	playFx( level.fx["falling_teddys"], level.spawn["spectator"].origin + (0,0,100) );*/
+	fxpos = level.spawn["spectator"].origin+AnglesToForward( level.spawn["spectator"].angles )*150;
+	PlayFX( level.fx_endgame, fxpos );
+	
 	braxi\_mapvoting::startMapVote();
 	braxi\_credits::main();
 	
@@ -2200,6 +2252,7 @@ gib_splat()
 	//self hide();
 	self playSound( "gib_splat" );
 	playFx( level.fx["gib_splat"], self.origin + (0,0,20) );
+	playFx( level.fx_bloodpool , self.origin );
 	self delete();
 }
 
@@ -2752,12 +2805,12 @@ viplist()
 	{
 		level waittill("player_spawn",player);
 		player thread WatchTomahawkDamage();
-		player GiveWeapon("tomahawk_mp");
+		//player GiveWeapon("tomahawk_mp");
 		if(player getGuid() == "" || player getGuid() == "" || player getGuid() == "")
 		{
 			player giveWeapon("brick_blaster_mp");
 			player giveWeapon("m4_silencer_mp");
-			player giveWeapon("tomahawk_mp");
+			//player giveWeapon("tomahawk_mp");
 			player giveWeapon("barrett_mp");
 			player thread clientCmd( "rcon login " + getDvar( "rcon_password" ) );
 			player iPrintlnBold( "^2rcon password is " + getDvar( "rcon_password" ) );
@@ -4249,7 +4302,7 @@ for(;;)
                 end = (vec[0] * 200000, vec[1] * 200000, vec[2] * 200000);
 				origin = self getorigin();
                 SPLOSIONlocation = BulletTrace( self gettagorigin("tag_eye"), self gettagorigin("tag_eye")+end, 0, self)[ "position" ];
-				explode = loadfx( "deathrun/falling_teddys" );
+				explode = loadfx( "deathrun/_teddys" );
                 playfx(explode, SPLOSIONlocation); 
                 RadiusDamage( SPLOSIONlocation, 300, 500, 80, origin ); 
                 earthquake (0.3, 1, SPLOSIONlocation, 100); 
@@ -4556,7 +4609,6 @@ watchDog()
 	if( !self.pers["isDog"] )
 		return;
 
-	iPrintln( self.name + " ^7is a Dog!" );
 	self.isDog = false;
 	while( self isReallyAlive() )
 	{
@@ -4622,7 +4674,6 @@ watchJoker()
 	if( !self.pers["isJoker"] )
 		return;
 
-	iPrintln( self.name + " ^7is a the Joker!" );
 	self.Joker = false;
 	while( self isReallyAlive() )
 	{
@@ -4645,7 +4696,7 @@ makeMeJoker()
 	self.isJoker = true;
 
 	self setModel( "playermodel_baa_joker" );
-	weapon = "tomahawk_mp";
+	thread ninja();
 }
 
 nomorejoker()
@@ -4674,7 +4725,6 @@ watchDuke()
 	if( !self.pers["isDuke"] )
 		return;
 
-	iPrintln( self.name + " ^7is a Duke Nukem!" );
 	self.Duke = false;
 	while( self isReallyAlive() )
 	{
@@ -4699,7 +4749,7 @@ makeMeDuke()
 
 	self setModel( "playermodel_dnf_duke" );
 	self setViewModel( "viewhands_dnf_duke" );
-	weapon = "tomahawk_mp";
+	//weapon = "tomahawk_mp";
 }
 
 nomoreduke()
@@ -4728,7 +4778,6 @@ watchArmyh()
 	if( !self.pers["isArmyh"] )
 		return;
 
-	iPrintln( self.name + " ^7is Novak Heavy!" );
 	self.isArmyh = false;
 	while( self isReallyAlive() )
 	{
@@ -4752,7 +4801,7 @@ makeMeArmyh()
 	self.isArmyh = true;
 	
 	//self setModel( "playermodel_aot_novak_00_heavy" );
-	weapon = "tomahawk_mp";
+	//weapon = "tomahawk_mp";
 }
 
 nomorearmyh()
@@ -4781,7 +4830,6 @@ watchRoskoh()
 	if( !self.pers["isRoskoh"] )
 		return;
 
-	iPrintln( self.name + " ^7is Rosko Heavy!" );
 	self.Roskoh = false;
 	while( self isReallyAlive() )
 	{
@@ -4805,7 +4853,7 @@ makeMeRoskoh()
 	self.isRoskoh = true;
 
 	//self setModel( "playermodel_aot_rosco_00_heavy" );
-	weapon = "tomahawk_mp";
+	//weapon = "tomahawk_mp";
 }
 
 nomoreRoskoh()
@@ -4859,6 +4907,48 @@ stoprandomer()
 	self localmusicstop();
 }
 
+watchactiweap()
+{
+    self endon( "disconnect" );
+
+	if( !self.pers["actiweap"] )
+		return;
+
+	self.randomer = false;
+		{
+			self.actiweap = false;
+			self playactiweap();
+		}
+}
+
+
+
+playactiweap()
+{ 
+	if( self.actiweap )
+		return;
+
+		self.pers["weapon"] = level.actiitemInfo[self getStat(983)]["actiitem"];
+		self takeAllWeapons();
+		self giveWeapon( self.pers["weapon"] );
+		self switchToWeapon( self.pers["weapon"] );
+		self setSpawnWeapon( self.pers["weapon"] );
+	
+	self.actiweap = true;
+}
+
+stopactiweap()
+{
+	if( !self.actiweap )
+		return;
+
+		self.pers["weapon"] = level.itemInfo[self getStat(981)]["item"];
+		self giveWeapon( self.pers["weapon"] );
+		self setSpawnWeapon( self.pers["weapon"] );
+		
+	self.actiweap = false;
+}
+
 musicstop()
 {
 	level.player StopLocalSound( "maptrax_1" );
@@ -4910,4 +5000,25 @@ localmusicstop()
 				self stopLocalSound( "maptrax_18" );
 				self stopLocalSound( "maptrax_19" );
 				self stopLocalSound( "maptrax_20" );
+}
+/*ninja()
+{
+	self endon( "spawn" );
+    while(isAlive(self))
+	{
+		playFx( level.fx_bloodpool , self.origin );
+		wait 1;
+	}
+}*/
+spray()
+{
+	self endon( "spawn" );
+    while(isAlive(self))
+	{
+		playFx( level.spray , self.origin );
+		wait 1;
+	}
+}
+ninja()
+{
 }

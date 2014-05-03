@@ -1,36 +1,36 @@
 name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
 
-end_round_1,,misc/endround1.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_2,,misc/endround2.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_3,,misc/endround3.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_4,,misc/endround4.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_5,,misc/endround5.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_6,,misc/endround6.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_7,,misc/endround7.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_8,,misc/endround8.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_9,,misc/endround9.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-end_round_10,,misc/endround10.wav,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
+end_round_1,,misc/endround1.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_2,,misc/endround2.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_3,,misc/endround3.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_4,,misc/endround4.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_5,,misc/endround5.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_6,,misc/endround6.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_7,,misc/endround7.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_8,,misc/endround8.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_9,,misc/endround9.wav,1,1,,,,1000000,,announcer,streamed,,,master
+end_round_10,,misc/endround10.wav,1,1,,,,1000000,,announcer,streamed,,,master
 
-maptrax_1,,mt/maptrax1.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_2,,mt/maptrax2.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_3,,mt/maptrax3.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_4,,mt/maptrax4.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_5,,mt/maptrax5.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_6,,mt/maptrax6.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_7,,mt/maptrax7.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_8,,mt/maptrax8.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_9,,mt/maptrax9.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_10,,mt/maptrax10.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_11,,mt/maptrax11.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_12,,mt/maptrax12.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_13,,mt/maptrax13.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_14,,mt/maptrax14.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_15,,mt/maptrax15.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_16,,mt/maptrax16.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_17,,mt/maptrax17.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_18,,mt/maptrax18.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_19,,mt/maptrax19.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
-maptrax_20,,mt/maptrax20.mp3,1,1,na,1,1,,,auto2d,streamed,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
+maptrax_1,,mt/maptrax1.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_2,,mt/maptrax2.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_3,,mt/maptrax3.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_4,,mt/maptrax4.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_5,,mt/maptrax5.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_6,,mt/maptrax6.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_7,,mt/maptrax7.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_8,,mt/maptrax8.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_9,,mt/maptrax9.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_10,,mt/maptrax10.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_11,,mt/maptrax11.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_12,,mt/maptrax12.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_13,,mt/maptrax13.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_14,,mt/maptrax14.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_15,,mt/maptrax15.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_16,,mt/maptrax16.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_17,,mt/maptrax17.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_18,,mt/maptrax18.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_19,,mt/maptrax19.mp3,1,1,,,,1000000,,announcer,streamed,,,master
+maptrax_20,,mt/maptrax20.mp3,1,1,,,,1000000,,announcer,streamed,,,master
 
 ee1,,misc/ee1.wav,1,1,na,1,1,,,auto2d,loaded,,,,all_mp,,,,,,,,,,,,,
 

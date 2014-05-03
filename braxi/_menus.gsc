@@ -40,9 +40,16 @@ init()
 
 	precacheMenu( "dr_help" );
 	precacheMenu( "dr_characters" );
+	precacheMenu( "dr_characters1" );
 	precacheMenu( "dr_sprays" );
+	precacheMenu( "dr_sprays1" );
+	precacheMenu( "dr_sprays2" );
+	precacheMenu( "dr_sprays3" );
 	precacheMenu( "dr_weapons" );
+	precacheMenu( "dr_weapons1" );
 	precacheMenu( "dr_abilities" );
+	precacheMenu( "stats" );
+	precacheMenu( "dr_actiweapon" );
 
 	precacheString( &"MP_HOST_ENDED_GAME" );
 	precacheString( &"MP_HOST_ENDGAME_RESPONSE" );
@@ -182,7 +189,7 @@ onMenuResponse()
 		}
 
 
-		if( menu == "dr_sprays" )
+		else if( menu == "dr_sprays" || menu == "dr_sprays1" || menu == "dr_sprays2" || menu == "dr_sprays3" )
 		{
 			spray = int(response)-1;
 			if( self braxi\_rank::isSprayUnlocked( spray ) )
@@ -191,7 +198,7 @@ onMenuResponse()
 				self setClientDvar( "drui_spray", spray );
 			}
 		}
-		else if( menu == "dr_characters" )
+		else if( menu == "dr_characters" || menu == "dr_characters1" )
 		{
 			character = int(response)-1; // scripting hacks everywhere :o
 			if( self braxi\_rank::isCharacterUnlocked( character ) )
@@ -201,7 +208,7 @@ onMenuResponse()
 				self setClientDvar( "drui_character", character );
 			}
 		}		
-		else if( menu == "dr_weapons" )
+		else if( menu == "dr_weapons" || menu == "dr_weapons1" )
 		{
 			item = int(response)-1;
 			if( self braxi\_rank::isItemUnlocked( item ) )
@@ -209,6 +216,16 @@ onMenuResponse()
 				self iPrintlnBold( "Your weapon will change next time you spawn" );
 				self setStat( 981, item );
 				self setClientDvar( "drui_weapon", item );
+			}
+		}
+		else if( menu == "dr_actiweapon" )
+		{
+			actiitem = int(response)-1;
+			if( self braxi\_rank::isactiItemUnlocked( actiitem ) )
+			{
+				self iPrintlnBold( "Your weapon will change next time you are activator" );
+				self setStat( 983, actiitem );
+				self setClientDvar( "drui_actiweapon", actiitem );
 			}
 		}
 		else if( menu == "dr_abilities"  )
@@ -239,7 +256,7 @@ onMenuResponse()
 					self setStat( 988, 0 );
 				}	
 				break;
-
+				
 			case "suicide":
 				if( !game["roundStarted"] )
 					continue;
@@ -251,6 +268,26 @@ onMenuResponse()
 			}
 
 		}
+		
+		else if( menu == "dr_options"  )
+		{
+			switch(response)
+			{
+			case "compass":
+				if( self getStat( 989 ) == 0 )
+				{
+					self setClientDvar( "compassSize", 1 );
+					self setStat( 989, 1 );
+				}
+				else
+				{
+					self setClientDvar( "compassSize", 0.01 );
+					self setStat( 989, 0 );
+				}	
+				break;
+			}
+		}
+		
 		else if( menu == game["menu_team"] )
 		{
 			switch(response)

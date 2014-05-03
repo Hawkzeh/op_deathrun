@@ -21,20 +21,20 @@
 init()
 {
 
-	setdvar("g_TeamName_Allies", "^1J^3u^1m^3p^1e^3r^1s");
+	setdvar("g_TeamName_Allies", "^2Jumpers");
 	setdvar("g_TeamIcon_Allies", "killiconfalling");
-	setdvar("g_TeamColor_Allies", "0.0 0.8 1.0");
-	setdvar("g_ScoresColor_Allies", "0.0 0.6 1.0");
+	setdvar("g_TeamColor_Allies", "0 0.8 0");
+	setdvar("g_ScoresColor_Allies", "0.1 0.8 0.1");
 
-	setdvar("g_TeamName_Axis", "^1A^3c^1t^3i^1v^3a^1t^3o^1r^3s");
+	setdvar("g_TeamName_Axis", "^1Activator");
 	setdvar("g_TeamIcon_Axis", "killiconsuicide");
 	setdvar("g_TeamColor_Axis", "0.8 0 0");
-	setdvar("g_ScoresColor_Axis", "0.8 0.1 0.1");
+	setdvar("g_ScoresColor_xis", "0.8 0.1 0.1");
 
-	setdvar("g_ScoresColor_Spectator", ".0 .8 .0");
+	setdvar("g_ScoresColor_Spectator", ".25 .25 .25");
 	setdvar("g_ScoresColor_Free", ".76 .78 .10");
-	setdvar("g_teamColor_MyTeam", "0.0 0.8 1.0" );
-	setdvar("g_teamColor_EnemyTeam", "0.0 0.0 0.0" );	
+	setdvar("g_teamColor_MyTeam", ".6 .8 .6" );
+	setdvar("g_teamColor_EnemyTeam", "1 .45 .5" );	
 
 	//precacheString(
 }
@@ -46,7 +46,7 @@ showBestStats()
 	info = [];
 
 	hudElems[hudElems.size] = addTextHud( level, 320, 80+addY, 1, "center", "middle", 3 );
-	hudElems[hudElems.size-1] setText( "^1BEST PLAYERS OF THIS MAP" );
+	hudElems[hudElems.size-1] setText( "^3BEST PLAYERS OF THIS MAP" );
 
 
 	info[0]["stat"] = "score";
@@ -216,7 +216,6 @@ showBestStats()
 	{
 		cleanScreen();
 		level.hud_best_players thread changeImage( "killiconheadshot" );
-                self playSound("stv_flag_stolen");
 		iPrintlnBold( guy.name + "^2 is ^2HEAD HUNTER ^2with ^3" + guy.pers["headshots"] + "^2 head shot kills." );
 		wait 2.6;
 	}

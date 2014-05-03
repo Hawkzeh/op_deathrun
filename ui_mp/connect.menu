@@ -22,74 +22,99 @@
 		style			WINDOW_STYLE_FILLED
 		fullScreen		MENU_FALSE
 		focusColor		COLOR_FOCUSED
-		visible			MENU_FALSE		
+		visible			1		
 		backcolor		1 1 1 1
-		background		"$levelBriefing"
+		background		"victory"
 		rect			FULLSCREEN_WIDE
 		
-		//onOpen { CHECK_BAN1; CHECK_BAN2; CHECK_BAN3; }
-		//onClose { CHECK_BAN1; CHECK_BAN2; CHECK_BAN3; }
-
-		// mod
-		itemDef
-		{
-			rect			-70 -135 140 75 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
-			origin			WIDESCREEN_OFFSET
-			style			WINDOW_STYLE_FILLED
-			visible			1		
-			backcolor		1 1 1 1
-			background		"server_logo"
+		onOpen
+		{ 
+			exec "selectStringTableEntryInDvar mp/didyouknow.csv 0 didyouknow";
 		}
 
+//exp forecolor	A	( dvarFloat( "ui_healthbar" ) )
 
-		
 
-		// oh you, AR51 ... why u joined the dark side?
-		/*#define IS_AR51 ( when(dvarString("fs_game") == "mods\ar51_deathrun" )
-		
+
 		itemDef
 		{
-			style			WINDOW_STYLE_FILLED
-			visible			IS_AR51
-			backcolor		1 1 1 1
-			background		"black"
-			rect			0 0 648 480
-		}
-		itemDef 
-		{
-			text			"^3From The Bibble of Universe\n"And strangers From outter space lived in Area number 51, the dark energy was all over the place\nbut than the Galaxy turned against them and the war began.\nWhen humans were about to lose their last battle, Queen BraXi joined the Republic to stop alien invasion\nand the world has changed, for ever, for better, and the aliens died...""
-			style			0
-			decoration
-			textscale		.9
-			//rect			3 134 110 20
-			origin			320 200
-			textalign		ITEM_ALIGN_CENTER
-			//textalignx	117
-			textaligny		16
+			style			WINDOW_STYLE_SHADER
+			rect			-107 0 1708 480
+			exp				rect X( (-607) + (cos(milliseconds()/10000) * 400) )
+
+			background		"animbg_blur_fogscroll" //"animbg_fogscrollthin"
+			forecolor		0 0 0 1
 			visible			1
+			decoration
 		}
-		execOnDvar ""IS_AR51" "wait 5;disconnect""*/
+
+		// map image
+		itemDef
+		{
+			name			"loadscreenimg"
+			style			WINDOW_STYLE_SHADER
+			rect			550 280 160 130
+			background		"$levelBriefing"
+			forecolor		0.9 0.9 0.9 1
+			visible			1
+			decoration
+			border			1
+			bordercolor		1 0.7 0 0.6
+		}
 
 		// load progress bar background
 		itemDef 
 		{
 			style			WINDOW_STYLE_FILLED
-			rect			-128 -40 260 4 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			rect			-228 -40 460 8 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
 			origin			WIDESCREEN_OFFSET
-			backcolor		0 0 0 0.8
-			visible			1	decoration	
+			backcolor		0.3 0.1 0 0.8
+			visible			1	
+			decoration	
 		}
 		// load progress bar
 		itemDef 
 		{
 			name			"loadbar"
 			style			WINDOW_STYLE_LOADBAR
-			rect			-127 -39 258 2 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			rect			-226 -38 456 4 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
 			origin			WIDESCREEN_OFFSET
 			background		"white"
-			visible			1	decoration
+			visible			1	
+			decoration
 		}
-		
+	
+		itemDef
+		{
+			exp				text( dvarstring("didyouknow") )
+			style			WINDOW_STYLE_EMPTY
+			rect			0 0 1 1
+
+			exp				rect X(320+(cos(milliseconds()/3000) * 40))
+			exp				rect Y(465)
+			//textaligny		150
+			textscale		0.2
+			textstyle		ITEM_TEXTSTYLE_NORMAL
+			textfont		UI_FONT_OBJECTIVE
+			textalign		ITEM_ALIGN_CENTER
+			visible			1
+			decoration
+		}		
+
+		itemDef
+		{
+			exp				text( "Mod Version: 1.2 | www.op-clan.info" )
+			style			WINDOW_STYLE_EMPTY
+			rect			0 480 1 1
+
+			textscale		0.13
+			textstyle		ITEM_TEXTSTYLE_NORMAL
+			textfont		UI_FONT_OBJECTIVE
+			textalign		ITEM_ALIGN_CENTER
+			visible			1
+			decoration
+		}	
+
 		/*itemDef 
 		{
 			style			WINDOW_STYLE_FILLED

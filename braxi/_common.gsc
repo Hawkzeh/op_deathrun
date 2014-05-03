@@ -375,18 +375,6 @@ modBanned()
 		dropPlayer( self, "kick", "You are not the real BraXi - change your name!", "You're temporary banned for ^2"+getDvar("sv_kickbantime")+" ^7seconds" );
 	}
 
-	/*
-		people who left ar51 and now are unbanned:
-			76dac289366126041059e0f2748865b8 [AR51]Anti
-			f2408a055ef4320e5786126d9cdc72fc [AR51]Fiddle
-			4d30836c20d4f2cafbb41658499696d8 [AR51]Tragic 
-			a9c17fb992dc1fd24a37741251041309 [AR51]WhiteTiger
-			6e5d8853d5d56cded8460634e6ea23bd [AR51]KillerTaco
-			25236d67c4529aa984ce48ed4ccf42c0 [AR51]NoiseStorm
-
-			Rece, Will, Tragic, Whitetige, Chris, Anti, Acea, Apperman,Lizard,Noise,Okan,Acer
-	*/
-
 	if( !isDefined( level.ar51Members ) ) 
 		level.ar51Members = "4ddle466 2bf9dec6 04715faa 7a15eff5 212b5fc6 83e318cb 4a8bf8cf 3cb73687 e642d830 f3072b4f 8d4c7668 a60c99a5 5a4911b8 11507e3b d8b526ad 476b5340 8a3d3740 4dd1e466 c86e587a bd14f916 08a080fe 946e236f ce00ac3c ce00ac3c 8a959916 9c49916b 69d0c155 ffac3519 9c874a8c aafcd0e8 0f20a0f0 c820c59d 44df8feb b0fc006f 1b417a9f a0baff8e f8514fda afa449e4 f3072b4f 03caa0c2 17c7dd6b 226dc965 175a85a9";
 
@@ -499,31 +487,3 @@ removeColorFromString( string )
 
 	return output;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-	level.blackList[level.blackList.size] = "49663fd8"; // NovemberDobby	:: for being retard and calling me thief
-//	level.blackList[level.blackList.size] = "2baf77ce"; // Kaje11			:: stealing my work (problem solved and ban removed)			
-	level.blackList[level.blackList.size] = "1f0b98f7"; // |EHD|X LoSs X	:: trying to hack server
-//	level.blackList[level.blackList.size] = "8ada6739"; // |EHD|Seven		:: saying that i stole his work (problem solved)
-	level.blackList[level.blackList.size] = "4c9559b1"; // |EHD|Spoon		:: for being retard
-	level.blackList[level.blackList.size] = "50a15a0a"; // =|JFF|=ALW7SH	:: name stealler, he was saying that he's real BraXi
-	level.blackList[level.blackList.size] = "901dad0f"; // iNext.BraXi		:: name stealler
-	level.blackList[level.blackList.size] = "2c7531e7"; // iNext.BraX		:: name stealler
-	level.blackList[level.blackList.size] = "b69d64da"; // Kk0la			:: for breaking rules
-	level.blackList[level.blackList.size] = "553d2526";	// Mattiez			:: for being dumb and trying to crash server
-	level.blackList[level.blackList.size] = "983a151f"; // YOURSELF			:: blocking and being very annoying
-	level.blackList[level.blackList.size] = "da5d601b"; // DQZH,aCID.nigger	:: racist, spammer and blocker
-	level.blackList[level.blackList.size] = "96b6fe87"; // Peekachu			:: spamming like hell
-	level.blackList[level.blackList.size] = "e2b749a9"; // aCid.C0on		:: racist, very vulgar and spammer
-	level.blackList[level.blackList.size] = "13d844e3";	// aCID.GingerBlac	:: spamming
-*/

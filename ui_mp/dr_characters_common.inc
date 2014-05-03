@@ -75,6 +75,44 @@
 			visible		1
 		} 
 
+		// actiweapon
+		itemDef 
+		{
+			rect			330 303 220 48
+			style			WINDOW_STYLE_FILLED
+			border			1
+			bordercolor		.6 .6 .6 .5
+			forecolor		1 1 1 1
+			backcolor		0 0 0 0.5
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			rect			335 305 64 48
+			style			WINDOW_STYLE_SHADER
+			exp				material( tableLookup(ACTIITEM_TABLE, 0, dvarInt("drui_actiweapon")+1, 3) )
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{ 
+			style		WINDOW_STYLE_FILLED 
+			rect		335 305 0 0 DR_BUTTON_ALIGN 
+			forecolor	0.9 0.9 0.9 1.0
+			exp			text( tableLookup(ACTIITEM_TABLE, 0, dvarInt("drui_actiweapon")+1, 5) ) 
+			type		ITEM_TYPE_BUTTON 
+			textfont	UI_FONT_NORMAL 
+			textstyle	ITEM_TEXTSTYLE_SHADOWED 
+			textalign	ITEM_ALIGN_LEFT 
+			textscale	0.38 
+			textalignx	70 
+			textaligny	35
+			visible		1
+		} 
 
 // ability
 		itemDef 

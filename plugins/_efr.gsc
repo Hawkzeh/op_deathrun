@@ -69,7 +69,7 @@ init( modVers )
 	if( level.dvar["pi_efr_vision"] )
 		visionSetNaked( level.mapName, 2.0 );
 	
-	while( getPlayingPlayers().size < 3 )
+	while( getPlayingPlayers().size < 2 )
 		wait 0.5;
 	
 	if( isDefined( level.matchStartText ) )

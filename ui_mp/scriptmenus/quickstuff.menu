@@ -58,7 +58,7 @@
 		}
 		execKey "2" { scriptMenuResponse "suicide"; close quickstuff }
 
-/*		itemDef
+		itemDef
 		{
 			name			"window"
 			visible			1
@@ -69,17 +69,17 @@
 			textstyle		ITEM_TEXTSTYLE_SHADOWED
 			textscale		TEXTSIZE_SMALL
 			textaligny		8
-			text			"3. Admin Control Panel"
+			text			"3. Toggle Compass"
 			decoration
 		}
-		execKey "3" { scriptMenuResponse "acp"; close quickstuff }
-*/
+		execKey "3" { scriptMenuResponse "compass"; close quickstuff }
+
 
 		itemDef
 		{
 			name			"window"
 			visible			1
-			rect			16 52 0 0
+			rect			16 68 0 0
 			origin			ORIGIN_QUICKSTUFFWINDOW
 			forecolor		1 1 1 1
 			textfont		UI_FONT_NORMAL

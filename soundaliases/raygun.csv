@@ -1,0 +1,11 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+#Raygun Sounds
+weap_rgun_loop,,weap/raygun/wpn_ray_loop.wav,0.75,0.85,explosion,0.7,0.9,50,15000,auto,streamed,,looping,0.5,all_mp,,,,,,,,,
+weap_rgun_exp,,weap/raygun/wpn_ray_exp.wav,0.75,0.85,explosion,0.7,0.9,50,15000,auto,streamed,,,0.5,all_mp,,,,,,,,,
+weap_rgun_fire_plr,,weap/raygun/wpn_ray_st_f.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+weap_rgun_fire,,weap/raygun/wpn_ray_st_r.wav,0.98,0.99,wpnai,1,1.1,35,6000,weapon,,,,0.85,,,,,weapon4,,,,0.3
+ray_reload_open,,weap/raygun/wpn_ray_reload_open.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+ray_reload_battery_out,,weap/raygun/wpn_ray_reload_battery_out.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+ray_reload_battery_in,,weap/raygun/wpn_ray_reload_battery.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,
+ray_reload_close,,weap/raygun/wpn_ray_reload_close.wav,1,1,wpnplyr,1,1.05,500000,,local,,,,0.85,,,,,weapon2,,,

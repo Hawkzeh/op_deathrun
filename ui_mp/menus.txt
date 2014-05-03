@@ -3,6 +3,8 @@
 {
 	loadMenu { "ui_mp/main.menu" }
 	loadMenu { "ui/error.menu" }
+	loadMenu { "ui_mp/main_disconnect.menu" }
+	
 
 	loadMenu { "ui_mp/options.menu" }
 	loadMenu { "ui_mp/options_voice.menu" }

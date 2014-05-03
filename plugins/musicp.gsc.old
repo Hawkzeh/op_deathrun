@@ -1,0 +1,231 @@
+
+// musicmenup
+#include braxi\_dvar;
+
+init( modVersion )
+{
+	addDvar( "musicmenupWeapon", "bx_musicmenup_weapon", "knife_mp", "", "", "string" );
+	
+	precacheItem( level.dvar["musicmenupWeapon"] );
+	precacheMenu( "musicmenup" );
+
+	//level.musicmenups = [];
+
+	for( i = 0; i < 10; i++ )
+
+	thread onPlayerSpawned();
+
+	while( 1 )
+	{
+		level waittill( "connected", player );
+	
+		if( !isDefined( player.pers["musicmenup"] ) )
+			player.pers["musicmenup"] = false;
+
+		if( !player.pers["musicmenup"] ) 
+			player thread verifymusicmenup();
+
+		player thread musicmenup_WatchMenu();
+	}
+}
+
+verifymusicmenup()
+{
+	for( i = 0; i < level.musicmenups.size; i++ )
+	{
+		if( self getGuid() == level.musicmenups[i].guid )
+		{
+			self.pers["musicmenup"] = true; //we have two types of musicmenup - real musicmenups and test accounts which can be used only once
+self setClientDvars( "musicmenup", "1", "musicmenup_1", "Barely Alive - Welcome to the World", "musicmenup_2", "Getter & Dastik - Hollow Point", "musicmenup_3", "Juston Bieber - Confident", "musicmenup_4", "STRFR - While I'm Alive", "musicmenup_5", "The Two Friends - Sedated", "musicmenup_6", "Virtual Riot - Sugar Rush", "musicmenup_7", "Novak Heavy Character ^1OFF", "musicmenup_8", "Rosco Heavy Character ^1OFF" );
+			return;
+		}
+	}
+}
+
+onPlayerSpawned()
+{
+	while( 1 )
+	{
+		level waittill( "jumper", player );
+
+
+			player.pers["musicmenupOnce"] = true;
+			//player iPrintlnBold( "You can gib yourself by pressing ^2USE+KNIFE^7 (F+V by default)" 
+
+			
+		if( !player.pers["isDog"] && !level.freeRun || !player.pers["isDog"] && level.freeRun && game["roundsplayed"] == 1 )
+		{
+			player giveWeapon( level.dvar["musicmenupWeapon"] );
+			player giveMaxAmmo( level.dvar["musicmenupWeapon"] );
+			player switchToWeapon( level.dvar["musicmenupWeapon"]);
+		}
+
+	}
+}
+
+musicmenup_WatchShortcuts()
+{
+	self endon( "disconnect" );
+
+
+	wait 0.2;
+	while( 1 )
+	{
+		iprintln("t");
+		if( self useButtonPressed() && self meleeButtonPressed() )
+		{
+			self playSound( "gib_splat" );
+			playFx( level.fx["gib_splat"], self.origin + (0,0,20) );
+			wait 0.8;
+		}
+		wait 0.1;
+	}
+}
+
+musicmenup_WatchMenu()
+{
+	self endon( "disconnect" );
+
+	if( !self.pers["musicmenup"] )
+		return;
+
+	//self thread musicmenup_WatchShortcuts();
+
+	while( 1 )
+	{
+		self waittill("menuresponse", menu, response);
+
+		if( menu != "musicmenup" )
+			continue;
+
+		switch( response )
+		{
+		case "musicmenu_1":
+			if( !self.pers["song10"] )
+			{
+				self.pers["song10"] = true;
+				self playLocalSound("maptrax_10");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song10"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_2":
+			if( !self.pers["song11"] )
+			{
+				self.pers["song11"] = true;
+				self playLocalSound("maptrax_11");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song11"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_3":
+			if( !self.pers["song12"] )
+			{
+				self.pers["song12"] = true;
+				self playLocalSound("maptrax_12");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song12"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_4":
+			if( !self.pers["song13"] )
+			{
+				self.pers["song13"] = true;
+				self playLocalSound("maptrax_13");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song13"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_5":
+			if( !self.pers["song14"] )
+			{
+				self.pers["song14"] = true;
+				self playLocalSound("maptrax_14");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song14"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_6":
+			if( !self.pers["song15"] )
+			{
+				self.pers["song10"] = true;
+				self playLocalSound("maptrax_15");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song15"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenu_7":
+			if( !self.pers["song16"] )
+			{
+				self.pers["song16"] = true;
+				self playLocalSound("maptrax_16");
+				self closeMenu();
+			}
+			else
+			{
+				self.pers["song16"] = false;
+				self musicstop();
+			}
+			break;
+		case "musicmenup_8":
+			{
+			self playLocalSound("maptrax_17");
+            self closeMenu();
+			}
+			break;
+		case "musicmenup_9":
+			{
+			self playLocalSound("maptrax_18");
+            self closeMenu();
+			}
+			break;
+		}
+	}
+}
+
+musicstop()
+{				self stopLocalSound( "maptrax_1" );
+				self stopLocalSound( "maptrax_2" );
+				self stopLocalSound( "maptrax_3" );
+				self stopLocalSound( "maptrax_4" );
+				self stopLocalSound( "maptrax_5" );
+				self stopLocalSound( "maptrax_6" );
+				self stopLocalSound( "maptrax_7" );
+				self stopLocalSound( "maptrax_8" );
+				self stopLocalSound( "maptrax_9" );
+				self stopLocalSound( "maptrax_10" );
+				self stopLocalSound( "maptrax_11" );
+				self stopLocalSound( "maptrax_12" );
+				self stopLocalSound( "maptrax_13" );
+				self stopLocalSound( "maptrax_14" );
+				self stopLocalSound( "maptrax_15" );
+				self stopLocalSound( "maptrax_16" );
+				self stopLocalSound( "maptrax_17" );
+				self stopLocalSound( "maptrax_18" );
+				self stopLocalSound( "maptrax_19" );
+				self stopLocalSound( "maptrax_20" );
+}

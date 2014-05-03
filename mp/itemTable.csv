@@ -1,13 +1,14 @@
-1,0,1,hud_icon_m9beretta,beretta,M9,Semi-automatic with a high capacity.
-2,1,5,hud_icon_colt_45,colt45,Colt 45,Semi-automatic with a medium power.
-3,2,10,hud_icon_usp_45,usp,USP,Semi-automatic with a medium power.
-4,3,15,hud_icon_desert_eagle,deserteagle,Desert Eagle,Semi-automatic with a high power.
-5,4,20,hud_icon_m40a3,m40a3,M40A3,Bolt action sniper rifle.
-6,5,25,hud_icon_desert_eagle,deserteaglegold,Gold Desert Eagle,Gold plated semi-automatic with high power.
-7,6,30,hud_icon_remington700,remington700,R700,Bolt action sniper rifle. Very effective.
-8,7,35,hud_icon_44,colt44,Colt Anaconda .44,Semi-automatic with deadly .44 bullets.
-9,8,40,hud_icon_model1887,winchester1200,Model 1887,Double barrelled shotgun with face-melting bullets.
-10,9,45,hud_icon_m40a3,m21,PSG-1,Sniper - desc not used.
-11,10,50,hud_bo_explosive_arrow,ak47_acog,Crossbow,Non-explosive arrows.
-12,11,55,hud_icon_44,g36c_acog,Taurus 850,Mini Colt 44.
-13,12,60,hud_icon_m14,m14_acog,M14,Pretty cool gun, hey?
+1,0,1,hud_beretta,beretta,M9,Semi-automatic with a high capacity.
+2,1,5,hud_colt45,colt45,Colt 45,Semi-automatic with a medium power.
+3,2,10,hud_usp,usp,USP,Semi-automatic with a medium power.
+4,3,15,hud_deserteagle,deserteagle,Desert Eagle,Semi-automatic with a high power.
+5,4,20,hud_m40a3,m40a3,M40A3,Bolt action sniper rifle.
+6,5,25,hud_deserteaglegold,deserteaglegold,Gold Desert Eagle,Gold plated semi-automatic with high power.
+7,6,30,hud_r700,remington700,R700,Bolt action sniper rifle. Very effective.
+8,7,35,hud_colt44,colt44,Colt Anaconda .44,Semi-automatic with deadly .44 bullets.
+9,8,40,hud_model1887,winchester1200,Model 1887,Double barrelled shotgun with face-melting bullets.
+10,9,45,hud_psg1,m21,PSG-1,Sniper - desc not used.
+11,10,50,hud_crossbow,ak47_acog,Crossbow,Non-explosive arrows.
+12,11,55,hud_taurus,g36c_acog,Taurus 850,Mini Colt 44.
+13,12,60,hud_knife,knife,Knife,Activator knife what?
+14,13,65,hud_raygun,barrett_acog,Raygun,Ray gun OMG!!!

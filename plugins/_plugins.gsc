@@ -57,6 +57,9 @@ main()
 						   LoadPlugin( plugins\xpevent::init, "XPEVENT", "deathrun" );
 						   LoadPlugin( plugins\numerical_health::init, "Numerical Health", "Bear" );
 						   LoadPlugin( plugins\vip::init, "Toggle Vip", "Braxi" );
+						   LoadPlugin( plugins\music::init, "Toggle Vip", "Braxi" );
+						   LoadPlugin( plugins\musicp::init, "Toggle Vip", "Braxi" );
+						   LoadPlugin( plugins\musicoptions::init, "Toggle Vip", "Braxi" );
 						   
 						   
                            

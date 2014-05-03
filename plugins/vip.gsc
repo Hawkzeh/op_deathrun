@@ -51,7 +51,7 @@ verifyVIP()
 		if( self getGuid() == level.vips[i].guid )
 		{
 			self.pers["vip"] = true; //we have two types of VIP - real VIPs and test accounts which can be used only once
-self setClientDvars( "vip", "1", "vip_1", "Special Spray ^1OFF", "vip_2", "Explode", "vip_3", "^5Characters", "vip_4", "Dog Character ^1OFF", "vip_5", "Joker Character ^1OFF", "vip_6", "Duke Nukem Character ^1OFF", "vip_7", "Novak Heavy Character ^1OFF", "vip_8", "Rosco Heavy Character ^1OFF" );
+self setClientDvars( "vip", "1", "vip_1", "Random Spray ^1OFF", "vip_2", "Explode", "vip_3", "Acti Weapon ^1OFF", "vip_4", "Dog Character ^1OFF", "vip_5", "Joker Character ^1OFF", "vip_6", "Duke Nukem Character ^1OFF", "vip_7", "Novak Heavy Character ^1OFF", "vip_8", "Rosco Heavy Character ^1OFF" );
 			return;
 		}
 	}
@@ -126,12 +126,12 @@ VIP_WatchMenu()
 			if( !isDefined( self.pers["customSpray"] ) )
 			{
 				self.pers["customSpray"] = true;
-				self setClientDvar( response, "Special Spray ^2ON" );
+				self setClientDvar( response, "Random Spray ^2ON" );
 			}
 			else
 			{
 				self.pers["customSpray"] = undefined;
-				self setClientDvar( response, "Special Spray ^1OFF" );
+				self setClientDvar( response, "Random Spray ^1OFF" );
 			}
 			break;
 
@@ -147,8 +147,15 @@ VIP_WatchMenu()
 			break;
 
 		case "vip_3":
+			if( !self.pers["actiweap"] )
 			{
-				self setClientDvar( response, "^5Characters" );
+				self.pers["actiweap"] = true;
+				self setClientDvar( response, "Acti Weapon ^2ON" );
+			}
+			else
+			{
+				self.pers["actiweap"] = false;
+				self setClientDvar( response, "Acti Weapon ^1OFF" );
 			}
 			break;
 			
@@ -219,3 +226,4 @@ VIP_WatchMenu()
 		}
 	}
 }
+

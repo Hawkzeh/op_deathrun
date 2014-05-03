@@ -71,6 +71,7 @@ localize,perks
 stringtable,mp/sprayTable.csv
 stringtable,mp/characterTable.csv
 stringtable,mp/itemTable.csv
+stringtable,mp/actiitemTable.csv
 stringtable,mp/ranktable.csv
 stringtable,mp/abilityTable.csv
 stringtable,mp/rankicontable.csv
@@ -194,6 +195,7 @@ material,gfx_spray22
 material,gfx_spray23
 material,gfx_spray24
 material,gfx_spray25
+material,gfx_spray35
 
 material,spray0_menu
 material,spray1_menu
@@ -221,6 +223,16 @@ material,spray22_menu
 material,spray23_menu
 material,spray24_menu
 material,spray25_menu
+material,spray26_menu
+material,spray27_menu
+material,spray28_menu
+material,spray29_menu
+material,spray30_menu
+material,spray31_menu
+material,spray32_menu
+material,spray33_menu
+material,spray34_menu
+material,spray35_menu
 
 material,character_sas
 material,character_gangster
@@ -270,8 +282,20 @@ fx,deathrun/spray22
 fx,deathrun/spray23
 fx,deathrun/spray24
 fx,deathrun/spray25
+fx,deathrun/spray26
+fx,deathrun/spray27
+fx,deathrun/spray28
+fx,deathrun/spray29
+fx,deathrun/spray30
+fx,deathrun/spray31
+fx,deathrun/spray32
+fx,deathrun/spray33
+fx,deathrun/spray34
+fx,deathrun/spray35
 fx,deathrun/falling_teddys
 fx,deathrun/gib_splat
+fx,deathrun/endgame_fx
+fx,deathrun/bloodpool
 
 // Menus
 menufile,ui_mp/scriptmenus/vip.menu
@@ -279,6 +303,7 @@ menufile,ui_mp/dr_menu_frame.inc
 menufile,ui_mp/perm_bans.inc
 menufile,ui_mp/connect.menu
 menufile,ui/bg.inc
+menufile,ui/options_sound_pc.menu
 menufile,ui_mp/hud.menu
 menufile,ui_mp/main.menu
 menufile,ui_mp/wm_quickmessage.menu
@@ -286,15 +311,25 @@ menufile,ui_mp/scriptmenus/dr_admin.menu
 menufile,ui_mp/scriptmenus/quickstuff.menu
 menufile,ui_mp/scriptmenus/team_select.menu
 menufile,ui_mp/scriptmenus/dr_help.menu
-//menufile,ui_mp/scriptmenus/dr_welcome.menu
+menufile,ui_mp/cac_demolitions.menu				//options
 menufile,ui_mp/scriptmenus/dr_options.menu
 menufile,ui_mp/scriptmenus/character_stuff.menu
 menufile,ui_mp/scriptmenus/clientcmd.menu
-menufile,ui_mp/challenges.menu
+menufile,ui_mp/challenges.menu					// Main disconnect
 menufile,ui_mp/controls_multi.menu
 menufile,ui_mp/scriptmenus/musicmenu.menu
 menufile,ui_mp/scriptmenus/musicmenup.menu
-menufile,ui_mp/scriptmenus/musicoptions.menu
+menufile,ui_mp/scriptmenus/musicoptions.menu		
+menufile,ui/choices_setup_common.menu
+menufile,ui/options_graphics_pc.menu
+menufile,ui_mp/createserver.menu			//Overpowered Connect
+menufile,ui_mp/options.menu
+menufile,ui_mp/single_popmenu.menu
+menufile,ui_mp/scriptmenus/popup_leavegame.menu
+menufile,ui_mp/scriptmenus/stats.menu
+menufile,ui_mp/scriptmenus/dr_actiweapon.menu
+//menufile,ui_mp/menus.txt
+
 
 // Sound aliases & sound files
 rawfile,sound/misc/ee1.wav
@@ -534,6 +569,9 @@ xanim,viewmodel_mw2_magnum_sprint_in
 xanim,viewmodel_mw2_magnum_sprint_loop
 xanim,viewmodel_mw2_magnum_sprint_out
 
+//cool knife
+material,weapon_knife
+
 
 sound,magnum_mw2,,all_mp
 
@@ -580,6 +618,29 @@ fx,raygun\raygun_impact
 sound,raygun,,all_mp
 
 
+material,left
+material,right
+
+
 # <------------------------------------------------------------------> #
 # <<<<<<<<<END>>>>>>>>>
 # <------------------------------------------------------------------> #
+
+//Weapon HUD
+material,hud_axe
+material,hud_beretta
+material,hud_colt44
+material,hud_colt45
+material,hud_crossbow
+material,hud_deserteagle
+material,hud_deserteaglegold
+material,hud_katana
+material,hud_knife
+material,hud_m40a3
+material,hud_r700
+material,hud_model1887
+material,hud_psg1
+material,hud_raygun
+material,hud_taurus
+material,hud_tomahawk
+material,hud_usp

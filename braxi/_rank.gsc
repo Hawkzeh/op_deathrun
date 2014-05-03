@@ -191,7 +191,7 @@ resetEverything()
 	for( stat = 3200; stat < 3208; stat++ ) // abilities
 		self setStat( stat, 0 );
 
-	for( stat = 979; stat < 983; stat++ ) // spray, character, weapon & ability
+	for( stat = 979; stat < 984; stat++ ) // spray, character, weapon & ability
 		self setStat( stat, 0 );
 }
 
@@ -590,6 +590,7 @@ updateRankAnnounceHUD()
 	self thread unlockSpray();
 	self thread unlockCharacter();
 	self thread unlockItem();
+	self thread unlockactiItem();
 
 /*	
 
@@ -716,6 +717,23 @@ unlockItem()
 	}
 }
 
+unlockactiItem()
+{
+	for( i = 0; i < level.actiitemInfo.size /*level.numItems+1*/; i++ )
+	{
+		if( self.pers["rank"] == level.actiitemInfo[i]["rank"] )
+		{
+		notifyData = spawnStruct();
+		notifyData.title = "New Activator Weapon!";
+		notifyData.description = level.actiitemInfo[i]["name"];
+		notifyData.icon = level.actiitemInfo[i]["shader"];
+		notifyData.duration = 2.9;
+		self thread unlockMessage( notifyData );
+			break;
+		}
+	}
+}
+
 isItemUnlocked( num )
 {
 	if( num > level.numItems || num <= -1)
@@ -725,6 +743,14 @@ isItemUnlocked( num )
 	return false;
 }
 
+isactiItemUnlocked( num )
+{
+	if( num > level.numactiItems || num <= -1)
+		return false;
+	if( self.pers["rank"] >= level.actiitemInfo[num]["rank"] )
+		return true;
+	return false;
+}
 
 isAbilityUnlocked( num )
 {

@@ -25,29 +25,40 @@ main()
 
 	braxi\_common::cleanScreen();
 
-	thread showCredit( "^3Deathrun 1.2 by:", 2.4 );
+	thread showCredit( "Mod Created By:", 2.4 );
 	wait 0.5;
-	thread showCredit( "^7BraXi", 1.8 );
+	thread showCredit( "BraXi", 1.8 );
 	wait 1.2;
-	thread showCredit( "^3Characters by:", 2.4 );
+	thread showCredit( "Characters Rigged By:", 2.4 );
 	wait 0.5;
-	thread showCredit( "^7|MACOM|Hacker", 1.8 );
+	thread showCredit( "|MACOM|Hacker", 1.8 );
 	wait 0.5;
-	thread showCredit( "^7_INSANE_", 1.8 );
+	thread showCredit( "_INSANE_", 1.8 );
 	wait 0.5;
-	thread showCredit( "^7Etheross", 1.8 );
+	thread showCredit( "Etheross", 1.8 );
 	wait 1.2;
-	thread showCredit( "^3Modifications by:", 2.4 );
+	thread showCredit( "Official Mappers:", 2.4 );
 	wait 0.5;
-	thread showCredit( "^3[oP]^7Hawkzeh", 1.8 );
+	thread showCredit( "BraXi", 1.8 );
 	wait 0.5;
-	thread showCredit( "^3[oP]^7Bob", 1.8 );
+	thread showCredit( "Viking", 1.8 );
+	wait 0.5;
+	thread showCredit( "Mr-X", 1.8 );
+	wait 0.5;
+	thread showCredit( "FearZ", 1.8 );
+	wait 0.5;
+	thread showCredit( "Harry", 1.8 );
+	wait 0.5;
+	thread showCredit( "Rednose", 1.8 );
 	wait 1.2;
-	thread showCredit( "^3Additional Help:", 2.4 );
+	thread showCredit( "Additional Help:", 2.4 );
 	wait 0.5;
-	thread showCredit( "^7Lossy", 2.4 );
+	thread showCredit( "Bipo", 1.8 );
+	wait 0.5;
+	thread showCredit( "DuffMan", 1.8 );
+
 	wait 2.2;
-	thread showCredit( "^3Thanks ^7for ^3playing ^7@ ^3[oP] ^7Deathrun!", 1.8 );
+	thread showCredit( "Thanks for playing Death Run ^31.2^7!", 2.4 );
 	
 	if( level.dvar["lastmessage"] != "" )
 	{
@@ -61,8 +72,6 @@ main()
 
 showCredit( text, scale )
 {
-	level thread braxi\_mod::GlowColors();
-
 	end_text = newHudElem();
 	end_text.font = "objective";
 	end_text.fontScale = scale;
@@ -75,7 +84,7 @@ showCredit( text, scale )
 	end_text.y = 540;
 	end_text.sort = -1; //-3
 	end_text.alpha = 1;
-	end_text.glowColor = level.randomcolour;
+	end_text.glowColor = (.1,.8,0);
 	end_text.glowAlpha = 1;
 	end_text moveOverTime(level.creditTime);
 	end_text.y = -60;
@@ -87,7 +96,7 @@ showCredit( text, scale )
 
 neon()
 {
-	neon = addNeon( "^7www.op-clan.info", 1.4 );
+	neon = addNeon( "^1www.AfterLifeGaming.net", 1.4 );
 	while( 1 )
 	{
 		neon moveOverTime( 12 );

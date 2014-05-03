@@ -1,0 +1,178 @@
+#include "ui/menudef.h"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/stats_info.inc"
+#include "ui_mp/common_macro.inc"
+menuDef
+{
+	name			"challenges"
+	rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN 0
+	focuscolor		COLOR_FOCUSED
+	style			WINDOW_STYLE_EMPTY
+	blurWorld		2.0
+	visible			1;
+	legacySplitScreenScale
+	onOpen
+	{
+		STAT_UPDATE;
+	}
+	onClose
+	{
+	}
+	onEsc
+	{
+		close self;
+		open main_text;
+	}
+	
+	// ------------------  statics ------------------------
+	
+	//=========================================================
+	//===================== MENU SELECTION ====================
+	//=========================================================
+		itemDef
+	{
+		style			WINDOW_STYLE_SHADER
+		rect			FULLSCREEN_WIDE
+		background		"deathrun"
+		visible			1
+		decoration
+	}
+	
+	itemDef
+	{
+		exp				text( "Interested In Leaving?" )
+		style			WINDOW_STYLE_EMPTY
+		rect			0 0 1 1
+			forecolor		1 1 1 1
+		//exp forecolor	A	( 1 - (cos(milliseconds()/1000) * 0.2) )
+			exp				rect X(320)
+		exp				rect Y(208) //+(cos(milliseconds()/400) * 32))
+		textaligny		10
+		textscale		0.7
+		textstyle		ITEM_TEXTSTYLE_SHADOWED
+		textfont		UI_FONT_OBJECTIVE
+		textalign		ITEM_ALIGN_CENTER
+		visible			1
+		decoration
+	}
+	itemDef
+	{
+		exp				text( "Select" )
+		style			WINDOW_STYLE_EMPTY
+		rect			0 0 1 1
+		exp				rect X(320)
+		exp				rect Y(220) //+(cos(milliseconds()/400) * 32))
+		textaligny		10
+		textscale		0.2
+		textstyle		ITEM_TEXTSTYLE_SHADOWED
+		textfont		UI_FONT_OBJECTIVE
+		textalign		ITEM_ALIGN_CENTER
+		visible			1
+		decoration
+	}
+		// Leave yes
+	#undef DRBUTTON_Y
+	#define DRBUTTON_Y ( 20 + 45 )
+		#undef DRBUTTON_X
+	#define DRBUTTON_X	(100 )
+		itemDef	
+	{
+		style			WINDOW_STYLE_SHADER
+		rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+		forecolor		1 1 1 1
+		background		"popmenu_bg"
+		visible			1
+		decoration
+	}
+	itemDef
+	{
+	text			"Yes"
+	type			ITEM_TYPE_BUTTON
+	rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+	forecolor		1 1 1 0.85
+	textalign		ITEM_ALIGN_MIDDLE_CENTER
+	visible			1 
+	textfont		6
+	textscale		0.3
+		onFocus 
+		{
+			play "mouse_over";
+		}	
+			action 
+		{
+			play "mouse_click";
+			close self;
+			exec "quit";
+		
+		}
+	}
+		// Leave No
+	#undef DRBUTTON_X
+	#define DRBUTTON_X	( 100 + 140 + 10 + 140 + 10 )
+		itemDef	
+	{
+		style			WINDOW_STYLE_SHADER
+		rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+		background		"popmenu_bg"
+		visible			1
+		decoration
+	}
+		itemDef
+	{
+		text			"No"
+		type			ITEM_TYPE_BUTTON
+		rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+		forecolor		1 1 1 0.85
+		textalign		ITEM_ALIGN_MIDDLE_CENTER
+		visible			1 
+		textfont		6
+		textscale		0.3
+			onFocus 
+		{
+			play "mouse_over";
+		}
+		action 
+		{
+			play "mouse_click";
+			close self; 
+			open "main_text";
+		}
+	}
+		// Return
+	#undef DRBUTTON_Y
+	#define DRBUTTON_Y	( 20 + 80 )
+	#undef DRBUTTON_X
+	#define DRBUTTON_X	(250)
+	itemDef	
+	{
+		style			WINDOW_STYLE_SHADER
+		rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+		forecolor		1 1 1 1
+		background		"popmenu_bg"
+		visible			1
+		decoration
+	}
+		itemDef
+	{
+		text			"Return"
+		type			ITEM_TYPE_BUTTON
+		rect			DRBUTTON_X DRBUTTON_Y 140 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_CENTER
+		forecolor		1 1 1 0.85
+		textalign		ITEM_ALIGN_MIDDLE_CENTER
+		visible			1 
+		textfont		6
+		textscale		0.3
+			onFocus 
+		{
+			play "mouse_over";
+		}
+		action 
+		{
+			play "mouse_click";
+			close self;
+			open main_text;
+		}
+	}	
+}

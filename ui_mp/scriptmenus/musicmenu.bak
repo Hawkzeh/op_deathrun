@@ -1,0 +1,141 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc" // including other menu's so you don't have to define things here as well..
+
+#define CHOICE_SIZE_X                        50
+#define CHOICE_SIZE_Y                        10
+
+#define CHOICE_X_START                        0
+#define CHOICE_Y_START                        100//180 // Y starting postion
+
+#define CHOICE_SEP_OFFSET_Y                -2
+
+#define CHOICE_SEP_1                        9 // when space 1 should go after certain button number, as you see it comes after button 2, so under spectator
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+{
+    menuDef // Starting menu, you can put menu's inside menus!
+    {
+        name                        "musicmenu"  // menu name, always need this for new menu's
+		rect                        0 0 640 480 //always have this as 640 x 480, pretty much the size of menu //
+		focuscolor                COLOR_FOCUSED // Menu focus colour for text and items etc...
+		blurWorld                7.0 //background blur
+		style                        WINDOW_STYLE_EMPTY
+		legacySplitScreenScale
+		onEsc
+		{
+			close self; // What happens you press ESCAPE
+		}
+		onOpen // when happens when you open menu
+		{
+			//focusFirst;
+			//setfocus "auto_assign";
+		}
+		onClose // what happens when you're closing menu. 
+		{
+		
+		
+		}
+                
+		#ifndef PC
+		execkeyint BUTTON_START
+		{
+			close self;
+		}
+		#endif
+                
+		// background overlay
+		itemDef        
+		{
+		style                        WINDOW_STYLE_FILLED
+		rect                        0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN 
+		backcolor					0 0 0 .5 
+		visible						1
+		decoration
+		}
+		//  top background
+		itemDef       
+		{
+			style                        WINDOW_STYLE_SHADER
+			rect                        0 0 854 45 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background                "black"
+			visible                        1
+			decoration
+		}
+				
+		itemDef       
+		{
+			style                        WINDOW_STYLE_FILLED
+			rect                        0 45 854 30 HORIZONTAL_ALIGN_FULLSCREEN 0
+			backcolor					0 0 0 .4 
+			visible                        1
+			decoration
+		}
+				
+		// bottom background
+		itemDef       
+		{
+			style                        WINDOW_STYLE_FILLED
+			rect                        0 405 854 30 HORIZONTAL_ALIGN_FULLSCREEN 0
+			backcolor					0 0 0 .4
+			visible                        1
+			decoration
+		}
+				
+		itemDef       
+		{
+			style                        WINDOW_STYLE_SHADER // this is for images
+									//  x  Y   W(width)   H(height) 
+			rect                        0 875 875 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background                "black" // background
+			visible                        1
+			decoration
+		}
+		
+		itemDef
+		{
+			rect			25 114 220 180
+			style			WINDOW_STYLE_SHADER
+			border		1 // 1 = border on, 0 = border off don't need add this if you want no border
+			bordersize	1.5	//size of border
+			bordercolor 1 0 0 1 // border color
+			background		"$levelBriefing"
+			forecolor	 1 1 1 1
+			decoration
+			visible        1
+		}
+		// ------------------ TREE TITLE ------------------
+                
+		CHOICE_MENU_TITLE( "Music Menu" ) // Title in the top left
+                
+		// map display ================================================
+		//#include "ui_mp/tactical_map.inc";   //showing minimap on menu, only work with stock maps :(
+		//=========================================================
+		//===================== MENU SELECTION ====================
+		//=========================================================
+
+		// PC widescreen fix
+		#ifdef PC
+		#undef  CHOICE_X_START
+		#define CHOICE_X_START        0 // X starting postion of menu buttons
+                        
+		#undef        CHOICE_HORIZONTAL_ALIGN
+		#define CHOICE_HORIZONTAL_ALIGN HORIZONTAL_ALIGN_CENTER
+		#endif
+		
+		CHOICE_BUTTON_VIS( 1, "Hellberg & Deutgen vs Splitbreed", play "mouse_click"; scriptMenuResponse "song1";, 1 )
+		CHOICE_BUTTON_VIS( 2, "Astronaut - Apollo", play "mouse_click"; scriptMenuResponse "song2";, 1 )
+        CHOICE_BUTTON_VIS( 3, "Bearly Alive - Chasing Ghosts", play "mouse_click"; scriptMenuResponse "song3";, 1 )
+        CHOICE_BUTTON_VIS( 4, "Bearly Alive - Chasing Ghosts VR Remix", play "mouse_click"; scriptMenuResponse "song4";, 1 )
+        CHOICE_BUTTON_VIS( 5, "Bearly Alive - Dial Up", play "mouse_click"; scriptMenuResponse "song5";, 1 )
+		CHOICE_BUTTON_VIS( 6, "Bearly Alive - Keyboard Killer", play "mouse_click"; scriptMenuResponse "song6";, 1 )
+		CHOICE_BUTTON_VIS( 7, "Bearly Alive - Killer in You", play "mouse_click"; scriptMenuResponse "song7";, 1 )
+		CHOICE_BUTTON_VIS( 8, "Bearly Alive - Spitball", play "mouse_click"; scriptMenuResponse "song8";, 1 )
+		CHOICE_BUTTON_VIS( 9, "Bearly Alive - Spastic Hero", play "mouse_click"; scriptMenuResponse "song9";, 1 )
+		
+        CHOICE_BUTTON_VIS( 10, "Stop the Music", play "mouse_click"; scriptMenuResponse "song21";, 1 )
+		CHOICE_BUTTON_VIS( 11, "Next Page", play "mouse_click"; scriptMenuResponse "song22";, 1 )
+		CHOICE_BUTTON_VIS( 12, "Done", play "mouse_click"; scriptMenuResponse "escape";, 1 )
+	}
+}
